@@ -1,6 +1,5 @@
 import React from 'react'
-import {Link} from 'react-scroll';
-// import{Link} from "react-router-dom";
+import{Link} from "react-router-dom";
 import {Nav,Navbar,NavItem, Col} from "react-bootstrap";
 
 
@@ -9,14 +8,14 @@ import phoneimg from "../images/whatsapp-svgr.svg";
 import mailimg from "../images/mail-svgrepo.svg";
 
 
-const Header = ({text}) => {
+const Header = () => {
   return (
     <>
-    <header className={"header " + text}>
+    <header className={"header"}>
       <Navbar bg="" expand="">
         <Col className="col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto">
           <div className="d-flex align-items-center justify-content-between">
-            <Link exact to="home" spy={true} smooth={true} className='navbar-brand'><h1><span>M</span>ujtaba</h1></Link>
+          <Link to={'/'} className='navbar-brand'><h1><span>M</span>ujtaba</h1></Link>
             <Nav className="d-none d-lg-flex align-items-center list-unstyled">
               {/* <NavItem><Link activeClass="active" to="home" spy={true} smooth={true} className='nav-link'>Home</Link></NavItem> */}
               <NavItem><Link to="about" className='nav-link' spy={true} smooth={true}>About</Link></NavItem>

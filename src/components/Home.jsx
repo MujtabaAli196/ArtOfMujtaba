@@ -75,6 +75,7 @@ import portfolio_alphaauto_img from "../images/portfolio_alphaauto_img.png";
 import portfolio_numero_img from "../images/portfolio_numero_img.png";
 import portfolio_alloywheels_img from "../images/portfolio_alloywheels_img.png";
 import portfolio_meditro_img from "../images/portfolio_meditro_img.png";
+import portfolio_SMMProject_img from "../images/portfolio_SMMProject_img.png";
 import portfolio_empty_img from "../images/portfolio_empty_img.png";
 
 // 
@@ -245,9 +246,9 @@ const WorkViewULArray =[
   {
     key:'3',
     viewbtn:'View Live',
-    viewlink:'http://www.relixnetworks.com/',
+    viewlink:'https://www.artofmujtaba.com/portfolio_projects/smm-project/',
     ledbanner:project_04,
-    titleproject:'Relix Networks',
+    titleproject:'SMM Project',
     paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
   },
   {
@@ -681,6 +682,12 @@ const Home = () => {
                         <a href="https://www.artofmujtaba.com/portfolio_projects/meditro/" rel="nofollow" className="d-block" >
                             <div className="portfolio_img overlay overlay_meditro"><img className='w-100 img-fluid' src={portfolio_meditro_img} alt="icon"/></div>
                             <div className="content"><h2>Doc-Tro Web</h2></div>
+                        </a>
+                      </li>
+                      <li className="portfolio-item smmProject_border">
+                        <a href="https://www.artofmujtaba.com/portfolio_projects/smm-project/" rel="nofollow" className="d-block" >
+                            <div className="portfolio_img overlay overlay_smmProject"><img className='w-100 img-fluid' src={portfolio_SMMProject_img} alt="icon"/></div>
+                            <div className="content"><h2>SMM Project</h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item empty empty_border">

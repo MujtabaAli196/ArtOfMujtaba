@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col} from "react-bootstrap";
-import {NavLink, Link} from "react-router-dom";
+import { Link} from "react-router-dom";
 import WorkViewULTwo from "../components/WorkViewULTwo";
 
 
@@ -78,7 +78,7 @@ const AllPortfolio =() => {
         <div className=''>
         <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>
           <div className='row workview_ul align-items-center'>
-            <Col className='col-6'><div className='header position-relative'><div className='navbar h-auto'><Link to={'/'} className={'navbar-brand'}><h1 className='fontsize26 text-white'><span>M</span>ujtaba</h1></Link></div></div></Col>
+            <Col className='col-6'><div className='header position-relative' style={{backgroundColor:'transparent'}}><div className='navbar h-auto'><Link to={'/'} className={'navbar-brand'}><h1 className='fontsize26 text-white'><span>M</span>ujtaba</h1></Link></div></div></Col>
             <Col className='col-6 text-end'><Link to={'/'} className="btn main_bg text-white">Go To Preview</Link></Col>
               {WorkViewULTwoArray.map((val) =>{
                 return(

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
 
 
@@ -27,10 +27,9 @@ import AllPortfolio from "./components/AllPortfolio";
 function App() {
     return ( 
         <>
-            <BrowserRouter >
-                <AnimatedCursor color = "101,177,91" innerSize = { 6 } outerSize = { 25 } innerScale = { 1 } outerScale = { 1.2 } outerAlpha = { 0.3 } outerStyle = { { border: '1px solid #65b15b' } }/> 
-           
-            {window.location.pathname === '/all-portfolio' || window.location.pathname === '/empty' ? <Header text={'d-none'}/> : <Header text={'d-block'} /> }
+            <Header/>
+            <AnimatedCursor color = "101,177,91" innerSize = { 6 } outerSize = { 25 } innerScale = { 1 } outerScale = { 1.2 } outerAlpha = { 0.3 } outerStyle = { { border: '1px solid #65b15b' } }/>
+            {/* {window.location.pathname === '/all-portfolio' || window.location.pathname === '/empty' ? <Header text={'d-none'}/> : <Header text={'d-block'} /> } */}
             <Routes>
                 <Route exact path={ `${process.env.PUBLIC_URL}/` } element = { <Home /> } /> 
                 {/* <Route path={ `${process.env.PUBLIC_URL}/404` } element = { <Empty /> } /> */}
@@ -44,7 +43,6 @@ function App() {
                 <Route path={`${process.env.PUBLIC_URL}/contact`} element={<Contact />} /> */
                 } 
             </Routes> 
-            </BrowserRouter> 
         </>
     );
 }

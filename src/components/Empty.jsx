@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // 
 import finderimg from "../images/finder.png";
@@ -16,7 +16,7 @@ const Empty = () => {
               </div>
               <div className="empty-state__message">This page is outside of the universe.</div>
               <div className="empty-state__help">The page you are trying to access doesn't exist or has been moved. <br/> Try going back to my homepage..</div>
-              <NavLink to={`${process.env.PUBLIC_URL}/`} className='btn btn-web mt-4 fontweightbold border-0'>Go Back To Home</NavLink>
+              <Link to={'/'} className='btn btn-web mt-4 fontweightbold border-0'>Go Back To Home</Link>
             </div>
           </div>
         </div>

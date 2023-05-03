@@ -10,7 +10,7 @@ const WorkViewUL = (props) => {
             <Card.Body>
                 <h4 className="m-0 title">{props.titleproject}</h4>
                 <p className="m-0 fontsize12">{props.paragraph_text}</p>
-                <Link to={'#' + props.viewlink} target="_blank" className='ul-btn'>{props.viewbtn}</Link>
+                <a href={'/' + props.viewlink} target="_blank" className='ul-btn'>{props.viewbtn}</a>
             </Card.Body>
         </Card>
     </>

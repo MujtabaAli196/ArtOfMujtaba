@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Row,Nav,InputGroup,NavItem,Form, Button} from "react-bootstrap";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import {Link} from 'react-scroll';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

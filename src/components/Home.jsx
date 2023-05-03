@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Row,Nav,InputGroup,NavItem,Form, Button} from "react-bootstrap";
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {Link} from 'react-scroll';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -527,8 +527,8 @@ const Home = () => {
                         <p className=''>Hi! I’m Mujtaba Ali, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.</p>
                         <div className='btns mt-4'>
                         {/* spy={true} smooth={true} */}
-                          <Link to='https://www.fiverr.com/artofmujtaba?up_rollout=true' target="_blank" className='btn btn-web me-4'>Hire Me</Link>
-                          <Link to={'https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf'} target="_blank" className='btn btn-outline-light d-inline-flex align-items-center justify-content-center'>View CV</Link>
+                          <a href='https://www.fiverr.com/artofmujtaba?up_rollout=true' target="_blank" className='btn btn-web me-4'>Hire Me</a>
+                          <a href={'https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf'} target="_blank" className='btn btn-outline-light d-inline-flex align-items-center justify-content-center'>View CV</a>
                         </div>
                       </div>
                     </Col>

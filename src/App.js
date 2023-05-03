@@ -28,7 +28,7 @@ function App() {
     return ( 
         <>
             <Header/>
-            <AnimatedCursor color = "101,177,91" innerSize = { 6 } outerSize = { 25 } innerScale = { 1 } outerScale = { 1.2 } outerAlpha = { 0.3 } outerStyle = { { border: '1px solid #65b15b' } }/>
+            {/* <AnimatedCursor color = "101,177,91" innerSize = { 6 } outerSize = { 25 } innerScale = { 1 } outerScale = { 1.2 } outerAlpha = { 0.3 } outerStyle = { { border: '1px solid #65b15b' } }/> */}
             {/* {window.location.pathname === '/all-portfolio' || window.location.pathname === '/empty' ? <Header text={'d-none'}/> : <Header text={'d-block'} /> } */}
             <Routes>
                 <Route exact path={ `${process.env.PUBLIC_URL}/` } element = { <Home /> } /> 

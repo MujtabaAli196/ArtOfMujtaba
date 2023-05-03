@@ -93,7 +93,7 @@ const ExperienceLoopArray = [
       key: "0",
       experienceimg: experience1,
       arrowicon: arrowimg,
-      title:"12+",
+      title:"07+",
       text:"Years of Experience",
       movetolink:"portfolio",
   },
@@ -526,8 +526,9 @@ const Home = () => {
                         <h2> Need a Creative Product? <br/> I can Help You! </h2>
                         <p className=''>Hi! I’m Mujtaba Ali, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.</p>
                         <div className='btns mt-4'>
-                          <Link to='#conatct' spy={true} smooth={true} className='btn btn-web me-4'>Hire Me</Link>
-                          <Link to={`${process.env.PUBLIC_URL}/`} className='btn btn-outline-light d-inline-flex align-items-center justify-content-center'>Download CV</Link>
+                        {/* spy={true} smooth={true} */}
+                          <Link to='https://www.fiverr.com/artofmujtaba?up_rollout=true' target="_blank" className='btn btn-web me-4'>Hire Me</Link>
+                          <Link to={'https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf'} target="_blank" className='btn btn-outline-light d-inline-flex align-items-center justify-content-center'>View CV</Link>
                         </div>
                       </div>
                     </Col>

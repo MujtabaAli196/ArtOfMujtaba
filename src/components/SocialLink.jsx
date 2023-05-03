@@ -6,7 +6,7 @@ const SocialLink = (props) => {
   return (
     <>
     <NavItem className=''>
-        <a href={props.social_link} rel="" className="has-tooltip">
+        <a target="_blank" href={props.social_link} rel="" className="has-tooltip">
             <img className='img-fluid' src={props.sociall_img} alt="icon"/>
             <div className='custom-tooltip'>{props.title}</div>
         </a>

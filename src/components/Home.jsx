@@ -528,7 +528,7 @@ const Home = () => {
                         <div className='btns mt-4'>
                         {/* spy={true} smooth={true} */}
                           <a href='https://www.fiverr.com/artofmujtaba?up_rollout=true' target="_blank" className='btn btn-web me-4'>Hire Me</a>
-                          <a href={'https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf'} target="_blank" className='btn btn-outline-light d-inline-flex align-items-center justify-content-center'>View CV</a>
+                          <a href={'https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf'} target="_blank" className='btn btn-outline-light d-inline-flex align-items-center justify-content-center' style={{fontWeight:'600',minWidth:'120px', maxWidth:'120px'}}>View CV</a>
                         </div>
                       </div>
                     </Col>

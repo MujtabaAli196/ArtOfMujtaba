@@ -745,6 +745,7 @@ const Home = () => {
                           <img className='img-fluid me-4' src={phoneicon} alt='icon'/>
                           <div><strong className='d-block white_text fontsize16'>Phone:</strong> 
                           <Nav.Link href="https://wa.me/%2B923344558449?text=Feel%20free%20to%20contact%20me%2024%2F7hours." target={'_blank'} className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 334 455 8449</Nav.Link>
+                          <Form.Label className={'d-block ms-lg-4 m-0 p-1'} style={{background:'#2a2a2a',width:'fit-content', fontSize:'12px',}}>For Backend Developer</Form.Label>
                           <Nav.Link href="https://wa.me/%2B923034396715?text=Feel%20free%20to%20contact%20me%2024%2F7hours." target={'_blank'} className='p-0 paragraph_text d-flex align-items-center'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 303 4396715</Nav.Link></div>
                         </NavItem>
                         <NavItem>
@@ -752,6 +753,7 @@ const Home = () => {
                           <div><strong className='d-block white_text fontsize16'>E-mail:</strong> 
                             <Nav.Link href="mailto:artofmujtaba@gmail.com" className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={gmailimg} width={'15'} alt={'icon'}/> artofmujtaba@gmail.com</Nav.Link>
                             <Nav.Link href="mailto:mujtabaa196@gmail.com" className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={gmailimg} width={'15'} alt={'icon'}/> mujtabaa196@gmail.com</Nav.Link>
+                            <Form.Label className={'d-block ms-lg-4 m-0 p-1'} style={{background:'#2a2a2a',width:'fit-content', fontSize:'12px',}}>For Backend Developer</Form.Label>
                             <Nav.Link href="mailto:arslanuog53@gmail.com" className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={gmailimg} width={'15'} alt={'icon'}/> arslanuog53@gmail.com</Nav.Link>
                           </div>
                         </NavItem>

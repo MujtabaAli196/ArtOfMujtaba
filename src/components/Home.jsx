@@ -484,7 +484,7 @@ const Home = () => {
                         )
                       })}
                       {/* <NavItem className=''>
-                        <Link target={'_blank'} to="https://github.com/MujtabaAli196" className="has-tooltip">
+                        <Link rel={'_blank'} to="https://github.com/MujtabaAli196" className="has-tooltip">
                           <p className='m-0'><img src={twitter} className="img-fluid" alt="icon"/></p>
                           <div className='custom-tooltip'>GitHub</div>
                         </Link>
@@ -716,7 +716,7 @@ const Home = () => {
                         </OwlCarousel>
                       </div>
                     {/* <li className="portfolio-item">
-                      <Link to={`${process.env.PUBLIC_URL}/all-portfolio`} className="d-flex align-items-center h-100 justify-content-center empty" target={'_blank'}>Veiw More</Link>
+                      <Link to={`${process.env.PUBLIC_URL}/all-portfolio`} className="d-flex align-items-center h-100 justify-content-center empty" rel={'_blank'}>Veiw More</Link>
                     </li> */}
                   </ul>
                 </Col>
@@ -744,9 +744,9 @@ const Home = () => {
                         <NavItem>
                           <img className='img-fluid me-4' src={phoneicon} alt='icon'/>
                           <div><strong className='d-block white_text fontsize16'>Phone:</strong> 
-                          <Nav.Link href="https://wa.me/%2B923344558449?text=Feel%20free%20to%20contact%20me%2024%2F7hours." target={'_blank'} className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 334 455 8449</Nav.Link>
+                          <Nav.Link href="https://wa.me/%2B923344558449?text=Feel%20free%20to%20contact%20me%2024%2F7hours." rel={'_blank'} className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 334 455 8449</Nav.Link>
                           <Form.Label className={'d-block ms-lg-4 m-0 p-1'} style={{background:'#2a2a2a',width:'fit-content', fontSize:'12px',}}>For Backend Developer</Form.Label>
-                          <Nav.Link href="https://wa.me/%2B923034396715?text=Feel%20free%20to%20contact%20me%2024%2F7hours." target={'_blank'} className='p-0 paragraph_text d-flex align-items-center'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 303 4396715</Nav.Link></div>
+                          <Nav.Link href="https://wa.me/%2B923034396715?text=Feel%20free%20to%20contact%20me%2024%2F7hours." rel={'_blank'} className='p-0 paragraph_text d-flex align-items-center'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 303 4396715</Nav.Link></div>
                         </NavItem>
                         <NavItem>
                           <img className='img-fluid me-4' src={emailicon} alt='icon'/>
@@ -762,19 +762,19 @@ const Home = () => {
                       {/* <div className='social_bottom'>
                         <Nav className="">
                           <NavItem className=''>
-                            <NavLink target={'_blank'} to={`${process.env.PUBLIC_URL}/`} className="has-tooltip">
+                            <NavLink rel={'_blank'} to={`${process.env.PUBLIC_URL}/`} className="has-tooltip">
                               <p className='m-0'><FontAwesomeIcon icon="fab fa-facebook-f" /></p>
                               <div className='custom-tooltip'>Facebook</div>
                             </NavLink>
                           </NavItem>
                           <NavItem className=''>
-                            <NavLink target={'_blank'} to={`${process.env.PUBLIC_URL}/`} className="has-tooltip">
+                            <NavLink rel={'_blank'} to={`${process.env.PUBLIC_URL}/`} className="has-tooltip">
                               <p className='m-0'><img width={15} className='img-fluid' src={twitter} alt='icon'/></p>
                               <div className='custom-tooltip'>Twitter</div>
                             </NavLink>
                           </NavItem>
                           <NavItem className=''>
-                            <NavLink target={'_blank'} to={`${process.env.PUBLIC_URL}/`} className="has-tooltip">
+                            <NavLink rel={'_blank'} to={`${process.env.PUBLIC_URL}/`} className="has-tooltip">
                               <p className='m-0'><img width={20} className='img-fluid' src={linkedin} alt='icon'/></p>
                               <div className='custom-tooltip'>LinkedIn</div>
                             </NavLink>

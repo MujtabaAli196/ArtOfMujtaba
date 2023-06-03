@@ -27,6 +27,7 @@ import phoneimg from "../images/whatsapp-svgr.svg";
 import gmailimg from "../images/gmail-svg.svg";
 // import twitter from "../images/twicon.svg";
 import linkedinicon from "../images/lindicon.svg";
+import Instagramicon from "../images/Instagramicon.svg";
 import fiverricon from "../images/fiverr-icon.svg";
 import githubicon from "../images/github-svgr.svg";
 import userimg from "../images/hero-img.png";
@@ -76,6 +77,7 @@ import portfolio_numero_img from "../images/portfolio_numero_img.png";
 import portfolio_alloywheels_img from "../images/portfolio_alloywheels_img.png";
 import portfolio_meditro_img from "../images/portfolio_meditro_img.png";
 import portfolio_SMMProject_img from "../images/portfolio_SMMProject_img.png";
+import portfolio_bitvortex_img from "../images/portfolio_bitvortex_img.png";
 import portfolio_empty_img from "../images/portfolio_empty_img.png";
 
 // 
@@ -139,6 +141,12 @@ const SocialLinkArray = [
     social_link:"https://www.linkedin.com/in/mujtaba-ali-809a24a0/",
     sociall_img: linkedinicon,
     title:"LinkedIn",
+  },
+  {
+    key: "4",
+    social_link:"https://www.instagram.com/mujtabaa158/",
+    sociall_img: Instagramicon,
+    title:"Instagram",
   },
 ]
 // FrontendSkillsLoopArray
@@ -689,6 +697,12 @@ const Home = () => {
                         <a href="https://www.artofmujtaba.com/portfolio_projects/smm-project/" rel="nofollow" className="d-block" >
                             <div className="portfolio_img overlay overlay_smmProject"><img className='w-100 img-fluid' src={portfolio_SMMProject_img} alt="icon"/></div>
                             <div className="content"><h2>SMM Project</h2></div>
+                        </a>
+                      </li>
+                      <li className="portfolio-item bitvortex_border">
+                        <a href="https://www.artofmujtaba.com/cryptofy/" rel="nofollow" className="d-block" >
+                            <div className="portfolio_img overlay overlay_bitvortex"><img className='w-100 img-fluid' src={portfolio_bitvortex_img} alt="icon"/></div>
+                            <div className="content"><h2>BitVortex</h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item empty empty_border">

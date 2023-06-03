@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 /*
-Theme Name: Maifie PROJECT
+Theme Name: artofmujtaba PROJECT
 Theme URI: 
 Author: 
 Author URI: 
-Description: Maifie PROJECT - Maifie PROJECT, .... Template
+Description: artofmujtaba PROJECT - artofmujtaba PROJECT, .... Template
 Version: 1.0.0
 */
 
@@ -35,6 +35,7 @@ Version: 1.0.0
     --alloywheelscolor: #e30a15;
     --meditrocolor: #fe970e;
     --smmprojectcolor: #b33cdb;
+    --bitvortexcolor: #00c4f4;
     --card-shadow: 11px 10px 38px hsla(0, 0%, 0%, 38%);
     // gradiant light
     --bluelight_color: linear-gradient(90deg, #70BBFF 42.31%, #82C3FF 119.22%, rgba(112, 187, 255, 0) 119.23%);
@@ -1887,6 +1888,9 @@ ul.portfolio-items{
             &.smmProject_border{
                 border-color: var(--smmprojectcolor);
             }
+            &.bitvortex_border{
+                border-color: var(--bitvortexcolor);
+            }
             &.empty_border{
                 border-color: #1b1b1b;
             }
@@ -2002,6 +2006,13 @@ ul.portfolio-items{
                     &:hover{
                         &::before{
                             background-color: rgba(179, 60, 219, 0.3);
+                        }
+                    }
+                }
+                &.overlay_bitvortex{
+                    &:hover{
+                        &::before{
+                            background-color: rgba(0, 196, 244, 0.3);
                         }
                     }
                 }

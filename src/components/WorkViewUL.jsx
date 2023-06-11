@@ -1,5 +1,6 @@
 import React from 'react';
 import {Card} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 const WorkViewUL = (props) => {
   return (
@@ -9,7 +10,7 @@ const WorkViewUL = (props) => {
             <Card.Body>
                 <h4 className="m-0 title">{props.titleproject}</h4>
                 <p className="m-0 fontsize12">{props.paragraph_text}</p>
-                <a href={'/' + props.viewlink} target="_blank" className='ul-btn'>{props.viewbtn}</a>
+                <Link to={ `${process.env.PUBLIC_URL}/` + props.viewlink } target="_blank" className='ul-btn'>{props.viewbtn}</Link>
             </Card.Body>
         </Card>
     </>

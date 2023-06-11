@@ -695,8 +695,8 @@ const Home = () => {
                       </li>
                       <li className="portfolio-item smmProject_border">
                         <a href="https://www.artofmujtaba.com/portfolio_projects/smm-project/" rel="nofollow" className="d-block" >
-                            <div className="portfolio_img overlay overlay_smmProject"><img className='w-100 img-fluid' src={portfolio_SMMProject_img} alt="icon"/></div>
-                            <div className="content"><h2>SMM Project</h2></div>
+                          <div className="portfolio_img overlay overlay_smmProject"><img className='w-100 img-fluid' src={portfolio_SMMProject_img} alt="icon"/></div>
+                          <div className="content"><h2>SMM Project</h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item bitvortex_border">

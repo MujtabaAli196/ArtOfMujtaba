@@ -14,7 +14,7 @@ import ToolsLoop from "../components/ToolsLoop";
 import ExperienceUL from "../components/ExperienceUL";
 import SocialLink from "../components/SocialLink";
 // import MyWorkView from "../components/MyWorkView";
-import WorkViewUL from "../components/WorkViewUL";
+// import WorkViewUL from "../components/WorkViewUL";
 import Footer from "../components/Footer";
 
 // import import
@@ -80,14 +80,22 @@ import portfolio_SMMProject_img from "../images/portfolio_SMMProject_img.png";
 import portfolio_bitvortex_img from "../images/portfolio_bitvortex_img.png";
 import portfolio_empty_img from "../images/portfolio_empty_img.png";
 
+import mobileScreen_01 from "../images/mobileScreen_01.png";
+import mobileScreen_02 from "../images/mobileScreen_02.png";
+import mobileScreen_03 from "../images/mobileScreen_03.png";
+import mobileScreen_04 from "../images/mobileScreen_04.png";
+import mobileScreen_05 from "../images/mobileScreen_05.png";
+import mobileScreen_06 from "../images/mobileScreen_06.png";
+import mobileScreen_07 from "../images/mobileScreen_07.png";
+
 // 
-import project_01 from "../images/project_01.png";
-import project_02 from "../images/project_02.png";
-import project_03 from "../images/project_03.png";
-import project_04 from "../images/project_04.png";
-import project_05 from "../images/project_05.png";
-import project_06 from "../images/project_06.png";
-import project_07 from "../images/project_07.png";
+// import project_01 from "../images/project_01.png";
+// import project_02 from "../images/project_02.png";
+// import project_03 from "../images/project_03.png";
+// import project_04 from "../images/project_04.png";
+// import project_05 from "../images/project_05.png";
+// import project_06 from "../images/project_06.png";
+// import project_07 from "../images/project_07.png";
 
 // CheackBoxLoopArray
 const ExperienceLoopArray = [
@@ -226,64 +234,64 @@ const BackendSkillsLoopArray = [
   },
 ]
 // WorkViewULArray
-const WorkViewULArray =[
-  {
-    key:'0',
-    viewbtn:'View Live',
-    viewlink:'https://foodzilla.co/',
-    ledbanner:project_01,
-    titleproject:'FoodZilla',
-    paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
-  },
-  {
-    key:'1',
-    viewbtn:'View Live',
-    viewlink:'https://walupp.com/',
-    ledbanner:project_02,
-    titleproject:'Walupp',
-    paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
-  },
-  {
-    key:'2',
-    viewbtn:'View Live',
-    viewlink:'https://ar-instrumed.com.au/',
-    ledbanner:project_03,
-    titleproject:'A-R Instrumed',
-    paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
-  },
-  {
-    key:'3',
-    viewbtn:'View Live',
-    viewlink:'https://www.artofmujtaba.com/portfolio_projects/smm-project/',
-    ledbanner:project_04,
-    titleproject:'SMM Project',
-    paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
-  },
-  {
-    key:'4',
-    viewbtn:'View Live',
-    viewlink:'https://www.artofmujtaba.com/portfolio_projects/qualifyhealths/',
-    ledbanner:project_05,
-    titleproject:'Qualify Healths',
-    paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
-  },
-  {
-    key:'5',
-    viewbtn:'View Live',
-    viewlink:'https://www.artofmujtaba.com/portfolio_projects/meditro/',
-    ledbanner:project_06,
-    titleproject:'Doc-Tro',
-    paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
-  },
-  {
-    key:'6',
-    viewbtn:'View Live',
-    viewlink:'https://www.artofmujtaba.com/portfolio_projects/numero/',
-    ledbanner:project_07,
-    titleproject:'Numero IX',
-    paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
-  },
-]
+// const WorkViewULArray =[
+//   {
+//     key:'0',
+//     viewbtn:'View Live',
+//     viewlink:'https://foodzilla.co/',
+//     ledbanner:project_01,
+//     titleproject:'FoodZilla',
+//     paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
+//   },
+//   {
+//     key:'1',
+//     viewbtn:'View Live',
+//     viewlink:'https://walupp.com/',
+//     ledbanner:project_02,
+//     titleproject:'Walupp',
+//     paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
+//   },
+//   {
+//     key:'2',
+//     viewbtn:'View Live',
+//     viewlink:'https://ar-instrumed.com.au/',
+//     ledbanner:project_03,
+//     titleproject:'A-R Instrumed',
+//     paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
+//   },
+//   {
+//     key:'3',
+//     viewbtn:'View Live',
+//     viewlink:'https://www.artofmujtaba.com/portfolio_projects/smm-project/',
+//     ledbanner:project_04,
+//     titleproject:'SMM Project',
+//     paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
+//   },
+//   {
+//     key:'4',
+//     viewbtn:'View Live',
+//     viewlink:'https://www.artofmujtaba.com/portfolio_projects/qualifyhealths/',
+//     ledbanner:project_05,
+//     titleproject:'Qualify Healths',
+//     paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
+//   },
+//   {
+//     key:'5',
+//     viewbtn:'View Live',
+//     viewlink:'https://www.artofmujtaba.com/portfolio_projects/meditro/',
+//     ledbanner:project_06,
+//     titleproject:'Doc-Tro',
+//     paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
+//   },
+//   {
+//     key:'6',
+//     viewbtn:'View Live',
+//     viewlink:'https://www.artofmujtaba.com/portfolio_projects/numero/',
+//     ledbanner:project_07,
+//     titleproject:'Numero IX',
+//     paragraph_text:'Responsive design Slider/scroller Server upload Browser compatibility',
+//   },
+// ]
 // ToolsLoopArray
 const ToolsLoopArray = [
   {
@@ -706,7 +714,7 @@ const Home = () => {
                         </a>
                       </li>
                       <li className="portfolio-item empty empty_border">
-                        <NavLink to={`${process.env.PUBLIC_URL}/all-portfolio`} rel="" className="d-block" >
+                        <NavLink to={`${process.env.PUBLIC_URL}/all-portfolio`} rel="" className="d-block">
                             <div className="portfolio_img overlay"><img className='w-100 img-fluid' src={portfolio_empty_img} alt="icon"/></div>
                             <div className="content"><h2>View More</h2></div>
                         </NavLink>
@@ -715,7 +723,14 @@ const Home = () => {
                     {/* display max width */}
                       <div className="workview_ul d-lg-none">
                         <OwlCarousel className='owl-theme workview_ul-owl' {...workviewprojects}>
-                          {WorkViewULArray.map((val) =>{
+                          <a href="https://foodzilla.co/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_01} alt='icon'/></a>
+                          <a href="https://bitvortex.ltd/development/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_02} alt='icon'/></a>
+                          <a href="http://walupp.com/orders" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_03} alt='icon'/></a>
+                          <a href="https://www.ar-instrumed.com/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_04} alt='icon'/></a>
+                          <a href="/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_05} alt='icon'/></a>
+                          <a href="https://www.artofmujtaba.com/portfolio_projects/meditro/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_06} alt='icon'/></a>
+                          <a href="https://www.artofmujtaba.com/portfolio_projects/smm-project/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_07} alt='icon'/></a>
+                          {/* {WorkViewULArray.map((val) =>{
                             return(
                               <WorkViewUL
                                 key={val.key}
@@ -726,7 +741,7 @@ const Home = () => {
                                 paragraph_text={val.paragraph_text}
                               />
                             )
-                          })}
+                          })} */}
                         </OwlCarousel>
                       </div>
                     {/* <li className="portfolio-item">

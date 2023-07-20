@@ -36,6 +36,7 @@ Version: 1.0.0
     --meditrocolor: #fe970e;
     --smmprojectcolor: #b33cdb;
     --bitvortexcolor: #00c4f4;
+    --listandsellcolor: #151a7b;
     --card-shadow: 11px 10px 38px hsla(0, 0%, 0%, 38%);
     // gradiant light
     --bluelight_color: linear-gradient(90deg, #70BBFF 42.31%, #82C3FF 119.22%, rgba(112, 187, 255, 0) 119.23%);
@@ -1891,6 +1892,9 @@ ul.portfolio-items{
             &.bitvortex_border{
                 border-color: var(--bitvortexcolor);
             }
+            &.listandsell_border{
+                border-color: var(--listandsellcolor);
+            }
             &.empty_border{
                 border-color: #1b1b1b;
             }
@@ -2013,6 +2017,13 @@ ul.portfolio-items{
                     &:hover{
                         &::before{
                             background-color: rgba(0, 196, 244, 0.3);
+                        }
+                    }
+                }
+                &.overlay_listandsell{
+                    &:hover{
+                        &::before{
+                            background-color: rgba(21, 26, 123, 0.3);
                         }
                     }
                 }

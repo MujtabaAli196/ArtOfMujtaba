@@ -664,61 +664,63 @@ const Home = () => {
                       <li className="portfolio-item foodzilla_border">
                         <a href="https://foodzilla.co/" rel="" className="d-block" >
                             <div className="portfolio_img overlay overlay_foodzilla"><img className='w-100 img-fluid' src={portfolio_foodzilla_img} alt="icon"/></div>
-                            <div className="content"><h2>Foodzilla Web</h2></div>
+                            <div className="content"><h2>Foodzilla Web <br/> <small>E-Commrence Project</small></h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item walupp_border">
-                        <a href="https://walupp.com/" rel="" className="d-block" >
+                        <a href="http://walupp.com/orders" rel="" className="d-block" >
                             <div className="portfolio_img overlay overlay_walupp"><img className='w-100 img-fluid' src={portfolio_walupp_img} alt="icon"/></div>
-                            <div className="content"><h2>Walupp Web</h2></div>
+                            <div className="content"><h2>Walupp Web <br/> <small>Best Food Deals</small></h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item alphaauto_border">
                         <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
                             <div className="portfolio_img overlay overlay_alphaauto"><img className='w-100 img-fluid' src={portfolio_alphaauto_img} alt="icon"/></div>
-                            <div className="content"><h2>Alphaauto eBay Store</h2></div>
+                            <div className="content"><h2>Alphaauto eBay Store <br/> <small>eBay Stores</small></h2></div>
                         </NavLink>
                       </li>
                       <li className="portfolio-item listandsell_border">
                         <a href="https://listandsell.co.za/" rel="" className="d-block" >
                             <div className="portfolio_img overlay overlay_listandsell"><img className='w-100 img-fluid' src={portfolio_listandsell_img} alt="icon"/></div>
-                            <div className="content"><h2>List and Sell</h2></div>
+                            <div className="content"><h2>List and Sell <br/> <small>Best Cars Deals</small></h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item arinstrumed_border">
                         <a href="https://ar-instrumed.com.au/" rel="" className="d-block" >
                             <div className="portfolio_img overlay overlay_arinstrumed"><img className='w-100 img-fluid' src={portfolio_aribstrumed_img} alt="icon"/></div>
-                            <div className="content"><h2>AR Instrumed Web</h2></div>
+                            <div className="content"><h2>AR Instrumed Web <br/> <small>Best Surgical Instruments</small></h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item alloywheels_border">
                         <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
                             <div className="portfolio_img overlay overlay_alloywheels"><img className='w-100 img-fluid' src={portfolio_alloywheels_img} alt="icon"/></div>
-                            <div className="content"><h2>CSA Alloy Wheels eBay Store</h2></div>
+                            <div className="content"><h2>CSA Alloy Wheels eBay Store <br/> <small>eBay Stores</small></h2></div>
                         </NavLink>
                       </li>
                       <li className="portfolio-item numero_border">
                         <a href="https://www.artofmujtaba.com/portfolio_projects/numero/" rel="" className="d-block" >
                             <div className="portfolio_img overlay overlay_numero"><img className='w-100 img-fluid' src={portfolio_numero_img} alt="icon"/></div>
-                            <div className="content"><h2>Numero XI Web</h2></div>
+                            <div className="content"><h2>Numero XI Web <br/> <small>Cocktails</small></h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item meditro_border">
                         <a href="https://www.artofmujtaba.com/portfolio_projects/meditro/" rel="nofollow" className="d-block" >
                             <div className="portfolio_img overlay overlay_meditro"><img className='w-100 img-fluid' src={portfolio_meditro_img} alt="icon"/></div>
-                            <div className="content"><h2>Doc-Tro Web</h2></div>
+                            <div className="content"><h2>Doc-Tro Web <br/> <small>Medical</small></h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item smmProject_border">
                         <a href="https://www.artofmujtaba.com/portfolio_projects/smm-project/" rel="nofollow" className="d-block" >
                           <div className="portfolio_img overlay overlay_smmProject"><img className='w-100 img-fluid' src={portfolio_SMMProject_img} alt="icon"/></div>
-                          <div className="content"><h2>SMM Project</h2></div>
+                          <div className="content"><h2>SMM Project <br/> <small>Post Management</small></h2></div>
                         </a>
                       </li>
                       <li className="portfolio-item bitvortex_border">
-                        <a href="https://www.artofmujtaba.com/cryptofy/" rel="nofollow" className="d-block" >
+                        <a href="https://bitvortex.ltd/" rel="nofollow" className="d-block" >
                             <div className="portfolio_img overlay overlay_bitvortex"><img className='w-100 img-fluid' src={portfolio_bitvortex_img} alt="icon"/></div>
-                            <div className="content"><h2>BitVortex</h2></div>
+                            <div className="content">
+                              <h2>BitVortex <br/> <small>Power of Cloud Mining</small></h2>
+                            </div>
                         </a>
                       </li>
                       {/* <li className="portfolio-item empty empty_border">

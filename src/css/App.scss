@@ -1849,7 +1849,7 @@ ul.portfolio-items{
         overflow: hidden;
         position: relative;
         border: solid var(--white_color) 15px;
-        height: 480px;
+        height: 100%;
         &:hover{
             transform: perspective(800px) rotateY(-0deg) translateY(-0px) rotateX(0deg) scale(0.9);
             filter: blur(0);
@@ -2036,15 +2036,20 @@ ul.portfolio-items{
             left: 15px;
             transition: all .6s;
             h2{
-                font-size: 18px;
+                font-size: 14px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                padding: 5px;
+                padding: 5px 10px;
                 font-weight: 600;
                 margin: 0;
                 color: var(--white_color);
-                background: var(--black_color);
+                background: var(--main_color);
                 border-radius: 5px;
+                small{
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                }
             }
         }
     }

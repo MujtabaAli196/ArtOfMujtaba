@@ -502,7 +502,7 @@ const Home = () => {
                   <div className='layer'><img className='img-fluid' src={userimg} alt="icon"/></div>
                 </div>
                 <div className="hero-text">
-                  <h2> We Design+Develop &amp; Build <br/> Creative Products </h2>
+                  <h1> We Design+Develop &amp; Build <br/> Creative Products </h1>
                   <a href="#contact" className="btn main_bg border-0">Get In Touch</a>
                 </div>
                 <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>

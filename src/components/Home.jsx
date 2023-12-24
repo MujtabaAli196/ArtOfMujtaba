@@ -28,6 +28,7 @@ import gmailimg from "../images/gmail-svg.svg";
 // import twitter from "../images/twicon.svg";
 import linkedinicon from "../images/lindicon.svg";
 import Instagramicon from "../images/Instagramicon.svg";
+import upworkicon from "../images/upwork-icon.svg";
 import fiverricon from "../images/fiverr-icon.svg";
 import githubicon from "../images/github-svgr.svg";
 import userimg from "../images/hero-img.png";
@@ -68,6 +69,7 @@ import face44_img from "../images/face44.png";
 import tecmyer_img from "../images/tecmyer.png";
 import aliftech_img from "../images/aliftech.png";
 import dtmhelderberg_img from "../images/dtmhelderberg.png";
+import exactprinto_img from "../images/exactprinto.png";
 // 
 import portfolio_foodzilla_img from "../images/portfolio_foodzilla_img.png";
 import portfolio_walupp_img from "../images/portfolio_walupp_img.png";
@@ -157,6 +159,12 @@ const SocialLinkArray = [
     social_link:"https://www.instagram.com/mujtabaa158/",
     sociall_img: Instagramicon,
     title:"Instagram",
+  },
+  {
+    key: "5",
+    social_link:"https://www.upwork.com/freelancers/mujtabaali3",
+    sociall_img: upworkicon,
+    title:"upwork",
   },
 ]
 // FrontendSkillsLoopArray
@@ -409,6 +417,16 @@ const ExperienceULArray = [
     date:"Present",
     linkgo:"https://dtmhelderberg.co.za/",
   },
+  {
+    key:"7",
+    avatar_pic:exactprinto_img,
+    title:"ExactPrinto",
+    multi_color:'exactprinto_bg-color',
+    subtitle:"Senior Graphic Designer",
+    paragraph:"Create visual concepts, using computer software, to communicate ideas that inspire, captivate consumers.",
+    date:"Present",
+    linkgo:"https://www.exactprinto.com/",
+  },
 ]
 // optionsprojects
   const optionsprojects = {
@@ -542,7 +560,7 @@ const Home = () => {
                       <div className='text-box-inline'>
                         <span className='subtitle'>About Me</span>
                         <h2> Need a Creative Product? <br/> I can Help You! </h2>
-                        <p className=''>Hi! I’m Mujtaba Ali, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.</p>
+                        <p className=''>My name is Mujtaba Ali, I am a full stack web developer and graphic designer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts.</p>
                         <div className='btns mt-4'>
                         {/* spy={true} smooth={true} */}
                           <a href='https://www.fiverr.com/artofmujtaba?up_rollout=true' rel="_blank" className='btn btn-web me-4'>Hire Me</a>
@@ -715,14 +733,14 @@ const Home = () => {
                           <div className="content"><h2>SMM Project <br/> <small>Post Management</small></h2></div>
                         </a>
                       </li>
-                      <li className="portfolio-item bitvortex_border">
+                      {/* <li className="portfolio-item bitvortex_border">
                         <a href="https://bitvortex.ltd/" rel="nofollow" className="d-block" >
                             <div className="portfolio_img overlay overlay_bitvortex"><img className='w-100 img-fluid' src={portfolio_bitvortex_img} alt="icon"/></div>
                             <div className="content">
                               <h2>BitVortex <br/> <small>Power of Cloud Mining</small></h2>
                             </div>
                         </a>
-                      </li>
+                      </li> */}
                       {/* <li className="portfolio-item empty empty_border">
                         <NavLink to={`${process.env.PUBLIC_URL}/all-portfolio`} rel="" className="d-block">
                             <div className="portfolio_img overlay"><img className='w-100 img-fluid' src={portfolio_empty_img} alt="icon"/></div>
@@ -779,18 +797,23 @@ const Home = () => {
                       <div className="contact-info">
                         <NavItem>
                           <img className='img-fluid me-4' src={addressicon} alt='icon'/>
-                          <div><strong className='d-block white_text fontsize16'>Address:</strong>  Babu Ghulam Nabi Rd, Sambnal, Sialkot, Punjab, Pakistan </div>
+                          <div><strong className='d-block white_text fontsize16'>Address:</strong> Sambnal, Sialkot, Punjab, Pakistan </div>
                         </NavItem>
                         <NavItem>
                           <img className='img-fluid me-4' src={phoneicon} alt='icon'/>
-                          <div><strong className='d-block white_text fontsize16'>Phone:</strong> 
-                          <Nav.Link href="https://wa.me/%2B923344558449?text=Feel%20free%20to%20contact%20me%2024%2F7hours." rel={'_blank'} className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 334 455 8449</Nav.Link>
-                          <Form.Label className={'d-block ms-lg-4 m-0 p-1'} style={{background:'#2a2a2a',width:'fit-content', fontSize:'12px',}}>For Backend Developer</Form.Label>
-                          <Nav.Link href="https://wa.me/%2B923034396715?text=Feel%20free%20to%20contact%20me%2024%2F7hours." rel={'_blank'} className='p-0 paragraph_text d-flex align-items-center'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 303 4396715</Nav.Link></div>
+                          <div>
+                            <strong className='d-block white_text fontsize16'>Phone:</strong>
+                            <Form.Label className={'d-block ms-lg-4 m-0 p-1'} style={{background:'#2a2a2a',width:'fit-content', fontSize:'12px',}}>For Frontend Developer</Form.Label>
+                            <Nav.Link href="https://wa.me/%2B923344558449?text=Feel%20free%20to%20contact%20me%2024%2F7hours." rel={'_blank'} className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 334 455 8449</Nav.Link>
+                            <Form.Label className={'d-block ms-lg-4 m-0 p-1'} style={{background:'#2a2a2a',width:'fit-content', fontSize:'12px',}}>For Backend Developer</Form.Label>
+                            <Nav.Link href="https://wa.me/%2B923034396715?text=Feel%20free%20to%20contact%20me%2024%2F7hours." rel={'_blank'} className='p-0 paragraph_text d-flex align-items-center'><img className={'img-fluid me-2'} src={phoneimg} width={'15'} alt={'icon'}/> (+92) 303 4396715</Nav.Link>
+                          </div>
                         </NavItem>
                         <NavItem>
                           <img className='img-fluid me-4' src={emailicon} alt='icon'/>
-                          <div><strong className='d-block white_text fontsize16'>E-mail:</strong> 
+                          <div>
+                            <strong className='d-block white_text fontsize16'>E-mail:</strong>
+                            <Form.Label className={'d-block ms-lg-4 m-0 p-1'} style={{background:'#2a2a2a',width:'fit-content', fontSize:'12px',}}>For Frontend Developer</Form.Label>
                             <Nav.Link href="mailto:artofmujtaba@gmail.com" className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={gmailimg} width={'15'} alt={'icon'}/> artofmujtaba@gmail.com</Nav.Link>
                             <Nav.Link href="mailto:mujtabaa196@gmail.com" className='p-0 paragraph_text'><img className={'img-fluid me-2'} src={gmailimg} width={'15'} alt={'icon'}/> mujtabaa196@gmail.com</Nav.Link>
                             <Form.Label className={'d-block ms-lg-4 m-0 p-1'} style={{background:'#2a2a2a',width:'fit-content', fontSize:'12px',}}>For Backend Developer</Form.Label>

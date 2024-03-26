@@ -6,16 +6,20 @@ import {Nav,Navbar,NavItem, Col} from "react-bootstrap";
 // img import
 import phoneimg from "../images/whatsapp-svgr.svg";
 import mailimg from "../images/mail-svgrepo.svg";
+import logo from "../images/logo.svg";
 
 
 const Header = () => {
   return (
     <>
     <header className={"header"}>
-      <Navbar bg="" expand="">
-        <Col className="col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto">
+      <Navbar bg="" expand="" className='p-0'>
+        <Col className="col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto">
           <div className="d-flex align-items-center justify-content-between">
-          <Link to={'/'} className='navbar-brand'><h1><span>M</span>ujtaba</h1></Link>
+          <Link to={'/'} className='navbar-brand m-0 d-flex align-items-center'>
+            <img className='img-fluid' width={'80px'} src={logo} alt='logo'/>
+          </Link>
+          {/* <Link to={'/'} className='navbar-brand'><h1><span>M</span>ujtaba</h1></Link> */}
             {/* <Nav className="d-none d-lg-flex align-items-center list-unstyled">
               <NavItem><Link activeClass="active" to="home" spy={true} smooth={true} className='nav-link'>Home</Link></NavItem>
               <NavItem><Link to="about" className='nav-link' spy={true} smooth={true}>About</Link></NavItem>

@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
 import {Col, Row,Nav,InputGroup,NavItem,Form, Button} from "react-bootstrap";
+import { TypeAnimation } from 'react-type-animation';
 import { NavLink } from 'react-router-dom';
 import {Link} from 'react-scroll';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -10,6 +11,7 @@ import OwlCarousel from "react-owl-carousel";
 import ExperienceLoop from "../components/ExperienceLoop";
 import FrontendSkillsLoop from "../components/FrontendSkillsLoop";
 import BackendSkillsLoop from "../components/BackendSkillsLoop";
+// import WordpressSkillsLoop from "../components/WordpressSkillsLoop";
 import ToolsLoop from "../components/ToolsLoop";
 import ExperienceUL from "../components/ExperienceUL";
 import SocialLink from "../components/SocialLink";
@@ -31,8 +33,8 @@ import Instagramicon from "../images/Instagramicon.svg";
 import upworkicon from "../images/upwork-icon.svg";
 import fiverricon from "../images/fiverr-icon.svg";
 import githubicon from "../images/github-svgr.svg";
-import userimg from "../images/hero-img.png";
-import blogimg from "../images/about-img.png";
+// import userimg from "../images/hero-imguserimg.png";
+import blogimg from "../images/about-img2.png";
 import addressicon from "../images/address.png";
 import phoneicon from "../images/phone.png";
 import emailicon from "../images/email.png";
@@ -70,9 +72,13 @@ import tecmyer_img from "../images/tecmyer.png";
 import aliftech_img from "../images/aliftech.png";
 import dtmhelderberg_img from "../images/dtmhelderberg.png";
 import exactprinto_img from "../images/exactprinto.png";
+import showdesign from "../images/show-design.png";
+import testimonials from "../images/testimonials.png";
 // 
-import portfolio_foodzilla_img from "../images/portfolio_foodzilla_img.png";
-import portfolio_walupp_img from "../images/portfolio_walupp_img.png";
+// import portfolio_foodzilla_img from "../images/portfolio_foodzilla_img.png";
+// import portfolio_walupp_img from "../images/portfolio_walupp_img.png";
+import portfolio_fs_img from "../images/portfolio_fs_img.png";
+import portfolio_yzee_img from "../images/portfolio_yzee_img.png";
 import portfolio_aribstrumed_img from "../images/portfolio_aribstrumed_img.png";
 import portfolio_listandsell_img from "../images/portfolio_listandsell_img.png";
 import portfolio_alphaauto_img from "../images/portfolio_alphaauto_img.png";
@@ -80,8 +86,8 @@ import portfolio_numero_img from "../images/portfolio_numero_img.png";
 import portfolio_alloywheels_img from "../images/portfolio_alloywheels_img.png";
 import portfolio_meditro_img from "../images/portfolio_meditro_img.png";
 import portfolio_SMMProject_img from "../images/portfolio_SMMProject_img.png";
-import portfolio_bitvortex_img from "../images/portfolio_bitvortex_img.png";
-import portfolio_empty_img from "../images/portfolio_empty_img.png";
+// import portfolio_bitvortex_img from "../images/portfolio_bitvortex_img.png";
+// import portfolio_empty_img from "../images/portfolio_empty_img.png";
 
 import mobileScreen_01 from "../images/mobileScreen_01.png";
 import mobileScreen_02 from "../images/mobileScreen_02.png";
@@ -243,6 +249,14 @@ const BackendSkillsLoopArray = [
     tooltiptext:"Codeigniter",
   },
 ]
+// WordpressSkillsLoopArray
+// const WordpressSkillsLoopArray = [
+//   {
+//     key: "0",
+//     iconimg:phpicon,
+//     tooltiptext:"PHP",
+//   },
+// ]
 // WorkViewULArray
 // const WorkViewULArray =[
 //   {
@@ -496,18 +510,54 @@ const Home = () => {
     <>
         <main>
             {/* Home */}
-              <div id="home" className="hero-section">
-                <div className='hero-img'>
-                  <div className='layer'><img className='img-fluid' src={userimg} alt="icon"/></div>
-                  <div className='layer'><img className='img-fluid' src={userimg} alt="icon"/></div>
-                </div>
-                <div className="hero-text">
-                  <h1> We Design+Develop &amp; Build <br/> Creative Products </h1>
-                  <a href="#contact" className="btn main_bg border-0">Get In Touch</a>
-                </div>
-                <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+              <div id="home" className="hero-section position-relative d-grid align-items-center">
+                <div className='hero-img d-flex'>
+                  {/* <div className='layer'></div> */}
+                  <div className='hero_content text-start d-grid col-xxl-9 col-lg-10 col-11 mx-auto text-center text-lg-start'>
+                    <Row className="align-items-center">
+                      <Col lg={'7'}>
+                        <Button variant='' className='hello-btn d-inline-flex align-items-center justify-content-center mx-lg-0 mx-auto'>Hello!</Button>
+                        <h1 className="mb-0">I'm <span className="heading_fontLobster">Mujtaba</span></h1>
+                        <div className="d-sm-flex align-items-center justify-content-center justify-content-lg-start" style={{gap:'15px'}}>
+                          <h3 className="mb-0">We are Monst In</h3>
+                          <TypeAnimation
+                            preRenderFirstString={true}
+                            sequence={[
+                              500,
+                              'Adobe Photoshop',
+                              1000,
+                              'Adobe Illustrator',
+                              500,
+                              'Figma',
+                              1000,
+                              'Html 5',
+                              500,
+                              'Css 3',
+                              1000,
+                              'JavaScript',
+                              500,
+                              'WordPress',
+                              1000,
+                              'React.js',
+                              500,
+                              'Social Meda Post Designs',
+                              1000,
+                            ]}
+                            speed={20}
+                            style={{ fontSize: '2rem' }}
+                            repeat={Infinity}
+                          />
+                        </div>
+                        <p className="mb-0 d-md-block d-none">I'm a professional Full-Stack Web Developer🧑💻 with 6+ year of experience in web development. Organized, flexible, critical-thinking, problem-solving abilities & Eager to learn more and specializing in Python, NodeJS & JSON, JavaScript, HTML5, CSS3, WordPress.</p>
+                        <Link rel="_blank" href="https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf" class="hire">View CV<div class="shine"></div></Link>
+                      </Col>
+                      <Col lg={'5'} className="text-end d-lg-block d-none"><img className="img-fluid" src={showdesign} alt="show-design"/></Col>
+                    </Row>
+                  </div>
+                  {/* <div className='layer'><img className='img-fluid' src={userimg} alt="icon"/></div> */}
                   <div className="scroll-down d-none d-sm-flex"><Link to="about" title="Scroll Down" spy={true} smooth={true}>Scroll</Link></div>
-                  <div className='social'>
+                  {/*  */}
+                  <div className='social d-none d-sm-flex'>
                     <Nav className="">
                       {SocialLinkArray.map((val) => {
                         return(
@@ -527,12 +577,16 @@ const Home = () => {
                       </NavItem> */}
                     </Nav>
                   </div>
-                </Col>
+                </div>
+                {/* <div className="hero-text">
+                  <h1> We Design+Develop &amp; Build <br/> Creative Products </h1>
+                  <a href="#contact" className="btn main_bg border-0">Get In Touch</a>
+                </div> */}
               </div>
             {/*  */}
-            <div className='section'>
-              <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>
-                  <Row className='align-items-center statistics-items justify-content-center'>
+            <div className='pb-5'>
+              <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+                  <Row className='gx-0 align-items-center statistics-items justify-content-center'>
                     {ExperienceLoopArray.map((val) => {
                         return (
                             <ExperienceLoop
@@ -550,7 +604,7 @@ const Home = () => {
             </div>
             {/* about */}
               <div id="about" className="section">
-                <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+                <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
                   <Row className='align-items-center'>
                     <Col className="about-img col-lg-6 col-12">
                       <div className="layer"><img src={blogimg} alt="User Name"/></div>
@@ -559,12 +613,12 @@ const Home = () => {
                     <Col className="col-lg-6 col-12">
                       <div className='text-box-inline'>
                         <span className='subtitle'>About Me</span>
-                        <h2> Need a Creative Product? <br/> I can Help You! </h2>
+                        <h2> Need a <span className="heading_fontLobster">Creative Product?</span> <br/> I can Help You! </h2>
                         <p className=''>My name is Mujtaba Ali, I am a full stack web developer and graphic designer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts.</p>
                         <div className='btns mt-4'>
                         {/* spy={true} smooth={true} */}
                           <a href='https://www.fiverr.com/artofmujtaba?up_rollout=true' rel="_blank" className='btn btn-web me-4'>Hire Me</a>
-                          <a href={'https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf'} rel="_blank" className='btn btn-outline-light d-inline-flex align-items-center justify-content-center' style={{fontWeight:'600',fontSize:'14px', minWidth:'120px', maxWidth:'120px'}}>View CV</a>
+                          {/* <a href={'https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf'} rel="_blank" className='btn btn-outline-light d-inline-flex align-items-center justify-content-center' style={{fontWeight:'600',fontSize:'14px', minWidth:'120px', maxWidth:'120px'}}>View CV</a> */}
                         </div>
                       </div>
                     </Col>
@@ -573,18 +627,19 @@ const Home = () => {
               </div>
             {/* Skill */}
               <div id="skills" className="section">
-                <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+                <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
                   <Tabs>
                     <Row className='align-items-center'>
                       <Col className="col-lg-6 col-12 mb-4 mb-lg-0">
                         <div className="text-box-inline">
                           <span className='subtitle'>My Skills</span>
-                          <h2> What My Programming <br/> Skills Included? </h2>
+                          <h2> What My Programming <br/> <span className="heading_fontLobster"> Skills Included?</span> </h2>
                           <p className="mb-5">I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</p>
                           <TabList>
                             <Tab>Frontend Skills</Tab>
                             <Tab>Tools</Tab>
                             <Tab>Backend Skills</Tab>
+                            {/* <Tab>WordPress Skills</Tab> */}
                           </TabList>
                         </div>
                       </Col>
@@ -628,6 +683,19 @@ const Home = () => {
                             })}
                           </div>
                         </TabPanel>
+                        {/* <TabPanel>
+                          <div className='skills-items'>
+                            {WordpressSkillsLoopArray.map((val) => {
+                              return(
+                                <WordpressSkillsLoop
+                                  key={val.key}
+                                  iconimg={val.iconimg}
+                                  tooltiptext={val.tooltiptext}
+                                />
+                              )
+                            })}
+                          </div>
+                        </TabPanel> */}
                       </Col>
                     </Row>
                   </Tabs>
@@ -635,7 +703,7 @@ const Home = () => {
               </div>
               {/* Portfolio */}
               <div id="portfolio" className="section">
-                <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+                <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
                 <Row className=''>
                       <Col className="col-lg-6 col-12 mb-4 mb-lg-0 order-lg-0 order-1">
                         <div className="experience_ul">
@@ -660,7 +728,7 @@ const Home = () => {
                       <Col className="col-lg-6 col-12 order-0">
                         <div className="text-box-inline">
                           <span className='subtitle'>Experience</span>
-                          <h2> 7+ Years of Experience With<br/> Many Awards! </h2>
+                          <h2> 7+ Years of <span className="heading_fontLobster">Experience With Many<br/> Awards!</span> </h2>
                           <p className="mb-3 mb-lg-5">I have been developing sites for 7 years and i know for sure the main trends and directions of modern design, I have been a visionary and a reliable software engineering partner for world-class brands. You will get a decent result as you expect.</p>
                         </div>
                       </Col>
@@ -669,17 +737,23 @@ const Home = () => {
               </div>
               {/* Project */}
               <div id="project" className="section">
-                <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+                <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
                   <ul className="portfolio-items list-unstyled">
                     <li className='nav-itemm'>
                       <div className="text-box-inline">
                           <span className='subtitle'>MY WORKS</span>
-                          <h2> See My Works Which <br/>Will Amaze You! </h2>
+                          <h2> See My Works Which <br/><span className="heading_fontLobster">Will Amaze You!</span> </h2>
                           <p className="mb-3 mb-lg-5">We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.</p>
                       </div>
                     </li>
                     <ul className="d-none d-lg-block">
-                      <li className="portfolio-item foodzilla_border">
+                      <li className="portfolio-item fslegals_border">
+                        <a href="https://fslegals.com/" rel="" className="d-block" >
+                            <div className="portfolio_img overlay overlay_fslegals"><img className='w-100 img-fluid' src={portfolio_fs_img} alt="icon"/></div>
+                            <div className="content"><h2>FSLegals <br/> <small>Wordpress Project</small></h2></div>
+                        </a>
+                      </li>
+                      {/* <li className="portfolio-item foodzilla_border">
                         <a href="https://foodzilla.co/" rel="" className="d-block" >
                             <div className="portfolio_img overlay overlay_foodzilla"><img className='w-100 img-fluid' src={portfolio_foodzilla_img} alt="icon"/></div>
                             <div className="content"><h2>Foodzilla Web <br/> <small>E-Commrence Project</small></h2></div>
@@ -690,7 +764,7 @@ const Home = () => {
                             <div className="portfolio_img overlay overlay_walupp"><img className='w-100 img-fluid' src={portfolio_walupp_img} alt="icon"/></div>
                             <div className="content"><h2>Walupp Web <br/> <small>Best Food Deals</small></h2></div>
                         </a>
-                      </li>
+                      </li> */}
                       <li className="portfolio-item alphaauto_border">
                         <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
                             <div className="portfolio_img overlay overlay_alphaauto"><img className='w-100 img-fluid' src={portfolio_alphaauto_img} alt="icon"/></div>
@@ -720,6 +794,12 @@ const Home = () => {
                             <div className="portfolio_img overlay overlay_numero"><img className='w-100 img-fluid' src={portfolio_numero_img} alt="icon"/></div>
                             <div className="content"><h2>Numero XI Web <br/> <small>Cocktails</small></h2></div>
                         </a>
+                      </li>
+                      <li className="portfolio-item fslegals_border">
+                        <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
+                            <div className="portfolio_img overlay overlay_fslegals"><img className='w-100 img-fluid' src={portfolio_yzee_img} alt="icon"/></div>
+                            <div className="content"><h2>Y-Zee <br/> <small>E-Commrence Project</small></h2></div>
+                        </NavLink>
                       </li>
                       <li className="portfolio-item meditro_border">
                         <a href="https://www.artofmujtaba.com/portfolio_projects/meditro/" rel="nofollow" className="d-block" >
@@ -780,17 +860,28 @@ const Home = () => {
                 </Col>
               </div>
               {/* Testimonials */}
-              {/* <div id="testimonials" className="section">
-                <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>Testimonials</Col>
-              </div> */}
+              <div id="" className="section">
+                <Col className='col-xxl-9 col-xl-9 col-lg-11 col-11 mx-auto'>
+                  <Row className='align-items-center'>
+                    <Col className="col-lg-6 col-12 order-1 order-lg-0 text-center"><img className="img-fluid" src={testimonials} alt="testimonials"/></Col>
+                    <Col className="col-lg-6 col-12 order-0 ps-lg-4">
+                      <div className='text-box-inline'>
+                        <span className='subtitle'>Testimonilas</span>
+                        <h2> What they <span className="heading_fontLobster">Said!</span></h2>
+                        <p className=''>Frontend development is all about crafting the perfect user experience. It's where design meets functionality to create something beautiful and intuitive for users.</p>
+                      </div>
+                    </Col>
+                  </Row>
+                </Col>
+              </div>
               {/* Contact */}
               <div id="contact" className="section contact">
-                <Col className='col-xx-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+                <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
                   <Row className='align-items-center'>
                     <Col className="col-lg-6 col-12 order-1 order-lg-0">
                       <div className='text-box-inline'>
                         <span className='subtitle'>Contact</span>
-                        <h2> Have You Any Project? <br/> Please Drop a Message</h2>
+                        <h2> Have You Any Project? <br/> <span className="heading_fontLobster">Please Drop a Message</span></h2>
                         <p className=''>Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.</p>
                       </div>
                       {/*  */}

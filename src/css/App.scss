@@ -337,7 +337,7 @@ select:focus {
     font-weight: 700;
     letter-spacing: 1px;
     position: relative;
-    margin:1em 0em 0;
+    margin: 1em 0em 0;
     overflow: hidden;
 }
 
@@ -405,6 +405,10 @@ select:focus {
         .navbar-brand {
             position: relative;
             z-index: 1;
+
+            img {
+                width: 260px;
+            }
 
             h1 {
                 font-size: 2rem;
@@ -550,11 +554,15 @@ select:focus {
     }
 }
 
-// @media(max-width:991px){
-//     .header{
-//         position: relative;
-//     }
-// }
+@media(max-width:575px) {
+    .header .navbar {
+        .navbar-brand {
+            img {
+                width: 180px;
+            }
+        }
+    }
+}
 
 /*----------------footer-----------------*/
 
@@ -1193,6 +1201,93 @@ footer.footer {
             }
         }
     }
+
+    // 
+    .social_2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 18px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 290px;
+        min-width: 290px;
+        text-transform: uppercase;
+
+        .nav {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+
+            .nav-item {
+                display: flex;
+
+                a.has-tooltip {
+                    position: relative;
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100px;
+
+                    &:hover,
+                    &:focus {
+                        background-color: rgba(86, 184, 135, 0.8);
+
+                        .custom-tooltip {
+                            visibility: visible;
+                            opacity: 1;
+                            left: calc(100% + 2rem);
+                        }
+                    }
+
+                    .custom-tooltip {
+                        position: absolute;
+                        z-index: 1;
+                        display: none;
+                        min-width: -webkit-max-content;
+                        min-width: -moz-max-content;
+                        min-width: max-content;
+                        background-color: var(--main_color);
+                        color: var(--white_color);
+                        font-size: 0.8rem;
+                        left: calc(100% + 4rem);
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        font-weight: 500;
+                        padding: 0.4rem 1rem;
+                        border-radius: 0.63rem;
+                        visibility: hidden;
+                        opacity: 0;
+                        pointer-events: none;
+                        -webkit-filter: var(--drop-shadow);
+                        filter: var(--drop-shadow);
+                        -webkit-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+
+                        &::after {
+                            left: 1px;
+                            -webkit-transform: translate(-100%, -50%);
+                            transform: translate(-100%, -50%);
+                            -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
+                            clip-path: polygon(0 50%, 100% 0, 100% 100%);
+                            top: 50%;
+                            height: 15px;
+                            width: 10px;
+                            content: "";
+                            position: absolute;
+                            background-color: var(--main_color);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -1262,7 +1357,7 @@ footer.footer {
 
 @media (max-width: 991px) {
     .hero-section {
-        min-height: calc(80vh - 0vh);
+        min-height: calc(60vh - 0vh);
         display: grid;
         place-content: center;
 
@@ -1377,17 +1472,6 @@ footer.footer {
             }
         }
 
-        .social {
-            // bottom: 40px;
-            left: 15px;
-
-            .nav .nav-item {
-                a.has-tooltip {
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-        }
 
         .hero-text {
             h1 {

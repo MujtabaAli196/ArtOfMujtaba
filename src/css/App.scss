@@ -554,12 +554,56 @@ select:focus {
     }
 }
 
+.logoBan {
+    height: 200px;
+    border-radius: 20px;
+}
+
 @media(max-width:575px) {
     .header .navbar {
         .navbar-brand {
             img {
                 width: 180px;
             }
+        }
+    }
+
+    .logoBan {
+        height: 100px;
+        border-radius: 5px;
+    }
+}
+
+/*----------------rfm-marquee-----------------*/
+.rfm-initial-child-container {
+    gap: 10px !important;
+}
+
+.rfm-marquee {
+    gap: 10px !important;
+}
+
+.image_wrapper {
+    margin: 0px;
+    background-color: var(--body_color);
+    border-radius: 15px;
+    border: solid 3px var(--body_color1);
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+.b-rand_logo {
+    img {
+        transition: all .6s ease;
+        cursor: pointer;
+        filter: grayscale(1);
+    }
+
+    &:hover {
+        img {
+            filter: grayscale(0);
         }
     }
 }
@@ -1101,107 +1145,6 @@ footer.footer {
         }
     }
 
-    .social {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: absolute;
-        bottom: 20px;
-        font-size: 18px;
-        text-transform: uppercase;
-        left: 30px;
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        -webkit-transform-origin: left top;
-        transform-origin: left top;
-
-        // &::after{
-        //   content: "";
-        //   display: inline-block;
-        //   height: 2px;
-        //   width: 30px;
-        //   background-color: var(--paragraph_color);
-        //   -webkit-transition: all 0.3s ease-in-out;
-        //   transition: all 0.3s ease-in-out;
-        // }
-        .nav {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-
-            .nav-item {
-                -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(90deg);
-                transform: rotateX(0deg) rotateY(180deg) rotateZ(90deg);
-                margin-right: 20px;
-
-                a.has-tooltip {
-                    position: relative;
-                    width: 25px;
-                    height: 25px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 100px;
-
-                    &:hover,
-                    &:focus {
-                        background-color: rgba(86, 184, 135, 0.8);
-
-                        .custom-tooltip {
-                            visibility: visible;
-                            opacity: 1;
-                            left: calc(100% + 2rem);
-                        }
-                    }
-
-                    .custom-tooltip {
-                        position: absolute;
-                        z-index: 1;
-                        min-width: -webkit-max-content;
-                        min-width: -moz-max-content;
-                        min-width: max-content;
-                        background-color: var(--main_color);
-                        color: var(--white_color);
-                        font-size: 0.8rem;
-                        left: calc(100% + 4rem);
-                        top: 50%;
-                        -webkit-transform: translateY(-50%);
-                        transform: translateY(-50%);
-                        font-weight: 500;
-                        padding: 0.4rem 1rem;
-                        border-radius: 0.63rem;
-                        visibility: hidden;
-                        opacity: 0;
-                        pointer-events: none;
-                        -webkit-filter: var(--drop-shadow);
-                        filter: var(--drop-shadow);
-                        -webkit-transition: all 0.3s ease;
-                        transition: all 0.3s ease;
-
-                        &::after {
-                            left: 1px;
-                            -webkit-transform: translate(-100%, -50%);
-                            transform: translate(-100%, -50%);
-                            -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
-                            clip-path: polygon(0 50%, 100% 0, 100% 100%);
-                            top: 50%;
-                            height: 15px;
-                            width: 10px;
-                            content: "";
-                            position: absolute;
-                            background-color: var(--main_color);
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     // 
     .social_2 {
         display: -webkit-box;
@@ -1283,6 +1226,108 @@ footer.footer {
                             position: absolute;
                             background-color: var(--main_color);
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    font-size: 18px;
+    z-index: 2;
+    text-transform: uppercase;
+    left: 30px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+
+    // &::after{
+    //   content: "";
+    //   display: inline-block;
+    //   height: 2px;
+    //   width: 30px;
+    //   background-color: var(--paragraph_color);
+    //   -webkit-transition: all 0.3s ease-in-out;
+    //   transition: all 0.3s ease-in-out;
+    // }
+    .nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+
+        .nav-item {
+            -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(90deg);
+            transform: rotateX(0deg) rotateY(180deg) rotateZ(90deg);
+            margin-right: 20px;
+
+            a.has-tooltip {
+                position: relative;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+
+                &:hover,
+                &:focus {
+                    background-color: rgba(86, 184, 135, 0.8);
+
+                    .custom-tooltip {
+                        visibility: visible;
+                        opacity: 1;
+                        left: calc(100% + 2rem);
+                    }
+                }
+
+                .custom-tooltip {
+                    position: absolute;
+                    z-index: 1;
+                    min-width: -webkit-max-content;
+                    min-width: -moz-max-content;
+                    min-width: max-content;
+                    background-color: var(--main_color);
+                    color: var(--white_color);
+                    font-size: 0.8rem;
+                    left: calc(100% + 4rem);
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    font-weight: 500;
+                    padding: 0.4rem 1rem;
+                    border-radius: 0.63rem;
+                    visibility: hidden;
+                    opacity: 0;
+                    pointer-events: none;
+                    -webkit-filter: var(--drop-shadow);
+                    filter: var(--drop-shadow);
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+
+                    &::after {
+                        left: 1px;
+                        -webkit-transform: translate(-100%, -50%);
+                        transform: translate(-100%, -50%);
+                        -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
+                        clip-path: polygon(0 50%, 100% 0, 100% 100%);
+                        top: 50%;
+                        height: 15px;
+                        width: 10px;
+                        content: "";
+                        position: absolute;
+                        background-color: var(--main_color);
                     }
                 }
             }

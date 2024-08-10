@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import Marquee from "react-fast-marquee";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPhone, faComments } from '@fortawesome/free-solid-svg-icons';
 import OwlCarousel from "react-owl-carousel";
@@ -97,6 +98,16 @@ import mobileScreen_05 from "../images/mobileScreen_05.png";
 import mobileScreen_06 from "../images/mobileScreen_06.png";
 import mobileScreen_07 from "../images/mobileScreen_07.png";
 import mobileScreen_08 from "../images/mobileScreen_08.png";
+
+import logoBanner from "../images/logo-banner.png";
+import logo_01 from "../images/logo_01.png";
+import logo_02 from "../images/logo_02.png";
+import logo_03 from "../images/logo_03.png";
+import logo_04 from "../images/logo_04.png";
+import logo_05 from "../images/logo_05.png";
+import logo_06 from "../images/logo_06.png";
+import logo_07 from "../images/logo_07.png";
+import logo_08 from "../images/logo_08.png";
 
 // 
 // import project_01 from "../images/project_01.png";
@@ -536,19 +547,21 @@ const Home = () => {
                         1000,
                         'JavaScript',
                         500,
-                        'WordPress',
+                        'WordPress Development',
                         1000,
                         'React.js',
                         500,
                         'Social Meda Post Designs',
                         1000,
+                        'Logo Designs',
+                        500,
                       ]}
                       speed={20}
                       style={{ fontSize: '2rem' }}
                       repeat={Infinity}
                     />
                   </div>
-                  <p className="mb-0 d-md-block d-none">ArtofMujtaba is committed to excellence in the field of software development. We're a Web and Mobile Design and Development Agency, With expertise in UI/UX design and development, using HTML, CSS, JavaScript, Bootstrap, SCSS/SASS, Reactjs, WordPress, NodeJS & JSON, and PHP, Laravel, codeigniter with online shopping store services, we engineer solutions that captivate users from the first click. Trust <Link style={{textDecoration:'underline'}} href="https://wa.me/%2B923344558449?text=Feel%20free%20to%20contact%20me%2024%2F7hours.">www.artofmujtaba.com</Link> to bring your vision to life.</p>
+                  <p className="mb-0 d-md-block d-none">ArtofMujtaba is committed to excellence in the field of software development. We're a Web and Mobile Design and Development Agency, With expertise in UI/UX design and development, using HTML, CSS, JavaScript, Bootstrap, SCSS/SASS, Reactjs, WordPress, NodeJS & JSON, and PHP, Laravel, codeigniter with online shopping store services, we engineer solutions that captivate users from the first click. Trust <Link style={{ textDecoration: 'underline' }} href="https://wa.me/%2B923344558449?text=Feel%20free%20to%20contact%20me%2024%2F7hours.">www.artofmujtaba.com</Link> to bring your vision to life.</p>
                   <Link rel="_blank" href="https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf" class="hire">View CV<div class="shine"></div></Link>
                   <div className="social_2 justify-content-center d-md-none d-flex">
                     <Nav className="justify-content-between w-100">
@@ -570,32 +583,26 @@ const Home = () => {
             </div>
             {/* <div className='layer'><img className='img-fluid' src={userimg} alt="icon"/></div> */}
             <div className="scroll-down d-none d-sm-flex"><Link to="about" title="Scroll Down" spy={true} smooth={true}>Scroll</Link></div>
-            {/*  */}
-            <div className='social d-md-flex d-none'>
-              <Nav className="">
-                {SocialLinkArray.map((val) => {
-                  return (
-                    <SocialLink
-                      key={val.key}
-                      social_link={val.social_link}
-                      sociall_img={val.sociall_img}
-                      title={val.title}
-                    />
-                  )
-                })}
-                {/* <NavItem className=''>
-                        <Link rel={'_blank'} to="https://github.com/MujtabaAli196" className="has-tooltip">
-                          <p className='m-0'><img src={twitter} className="img-fluid" alt="icon"/></p>
-                          <div className='custom-tooltip'>GitHub</div>
-                        </Link>
-                      </NavItem> */}
-              </Nav>
-            </div>
+
           </div>
           {/* <div className="hero-text">
                   <h1> We Design+Develop &amp; Build <br/> Creative Products </h1>
                   <a href="#contact" className="btn main_bg border-0">Get In Touch</a>
                 </div> */}
+        </div>
+        <div className='social d-md-flex d-none'>
+          <Nav className="">
+            {SocialLinkArray.map((val) => {
+              return (
+                <SocialLink
+                  key={val.key}
+                  social_link={val.social_link}
+                  sociall_img={val.sociall_img}
+                  title={val.title}
+                />
+              )
+            })}
+          </Nav>
         </div>
         {/*  */}
         <div className='pb-5'>
@@ -749,6 +756,46 @@ const Home = () => {
             </Row>
           </Col>
         </div>
+        {/*  */}
+        {/* <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+          <div className="text-box-inline text-center">
+            <span className='subtitle'>Logo Works</span>
+            <h2> 7+ Years of <span className="heading_fontLobster">Experience With Many<br /> Awards!</span> </h2>
+          </div>
+        </Col> */}
+        <section className="brand_bg position-relative h-100 d-grid align-items-center justify-content-center" style={{ paddingBottom: '60px', paddingTop: '60px' }}>
+          <div className="m-auto text-center position-absolute d-inline-flex align-items-center justify-content-center h-100 start-0 end-0" style={{ zIndex: '2', }}><img style={{ boxShadow: '0px 0px 30px #56b887' }} class="logoBan img-fluid" src={logoBanner} alt="logo-banner" /></div>
+          <Marquee pauseOnHover speed={100} delay={0}>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_01} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_02} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_03} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_04} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_05} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_06} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_07} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_08} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_06} alt="" /></div>
+            </div>
+          </Marquee>
+        </section>
+        {/*  */}
         {/* Project */}
         <div id="project" className="section">
           <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>

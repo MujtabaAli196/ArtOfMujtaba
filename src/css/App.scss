@@ -1013,9 +1013,10 @@ footer.footer {
 
         h3 {
             color: var(--white_color);
-            font-weight: 400;
+            font-weight: 200;
             font-size: 1.2rem;
-            font-style: italic;
+            font-style: normal;
+            text-transform: uppercase;
             line-height: normal;
         }
 
@@ -1028,12 +1029,15 @@ footer.footer {
         .hello-btn {
             border: solid 2px var(--white_color);
             border-radius: 100px;
-            max-width: 110px;
-            min-width: 110px;
+            max-width: fit-content;
+            min-width: fit-content;
             color: var(--white_color);
             font-size: 14px;
             height: 40px;
-            font-weight: 600;
+            padding-left: 30px;
+            padding-right: 30px;
+            display: inline;
+            font-weight: 200;
             transition: all .6s;
 
             &:hover {
@@ -1706,6 +1710,9 @@ footer.footer {
     .subtitle {
         position: relative;
         text-transform: uppercase;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 3px;
     }
 
     h2 {
@@ -1758,7 +1765,8 @@ footer.footer {
             min-width: 0;
             height: 100%;
             color: var(--white_color);
-            font-weight: 600;
+            font-weight: 200;
+            text-transform: uppercase;
             white-space: nowrap;
             padding-left: 30px;
             padding-right: 30px;
@@ -1953,7 +1961,7 @@ footer.footer {
                 width: 60px;
                 background-color: var(--paragraph_color);
                 margin-top: 5px;
-                margin-bottom: 16px;
+                margin-bottom: 5px;
             }
         }
     }
@@ -2202,9 +2210,10 @@ footer.footer {
         }
 
         h2.experience_titleh2 {
-            font-size: 18px;
-            transition: all .6s;
-            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.6s;
+            font-weight: 200;
+            text-transform: uppercase;
             margin: 0;
             color: var(--main_color);
         }
@@ -2259,11 +2268,18 @@ footer.footer {
         border-radius: 70px 0 0 70px;
         background-color: var(--main_color);
     }
-    &::after{
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
+    // &::after{
+    //     content: '';
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 100%;
+    // }
+}
+@media(max-width:1199px) {
+    .project__slidee{
+        &::before{
+            border-radius: 10px 0 0 10px;
+        }
     }
 }
 /*----------------empty-state-----------------*/

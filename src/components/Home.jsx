@@ -541,7 +541,7 @@ const Home = () => {
             <div className='hero_content text-start d-grid col-xxl-9 col-lg-10 col-11 mx-auto text-center text-lg-start'>
               <Row className="align-items-center">
                 <Col lg={'7'}>
-                  <Button variant='' className='hello-btn d-inline-flex align-items-center justify-content-center mx-lg-0 mx-auto'>Hello!</Button>
+                  <Button variant='' className='hello-btn d-inline-flex align-items-center justify-content-center mx-lg-0 mx-auto'>Hello! Greetings</Button>
                   <h1 className="mb-0">I'm <span className="heading_fontLobster">Mujtaba</span></h1>
                   <div className="d-sm-flex align-items-center justify-content-center justify-content-lg-start" style={{ gap: '15px' }}>
                     <h3 className="mb-0">We are Monst In</h3>
@@ -660,7 +660,7 @@ const Home = () => {
           </Col>
         </div>
         {/* Skill */}
-        <div id="skills" className="section">
+        <div id="skills" className="section" style={{ marginBottom: '60px', }}>
           <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
             <Tabs>
               <Row className='align-items-center'>
@@ -736,9 +736,47 @@ const Home = () => {
             </Tabs>
           </Col>
         </div>
+        {/* <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+          <div className="text-box-inline text-center">
+            <span className='subtitle'>Logo Works</span>
+            <h2> 7+ Years of <span className="heading_fontLobster">Experience With Many<br /> Awards!</span> </h2>
+          </div>
+        </Col> */}
+        <section className="brand_bg position-relative h-100 d-grid align-items-center justify-content-center" style={{ marginBottom: '60px', }}>
+          <div className="m-auto text-center position-absolute d-inline-flex align-items-center justify-content-center h-100 start-0 end-0" style={{ zIndex: '2', }}><img style={{ boxShadow: '0px 0px 30px #56b887' }} class="logoBan img-fluid" src={logoBanner} alt="logo-banner" /></div>
+          <Marquee pauseOnHover speed={100} delay={0}>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_01} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_02} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_03} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_04} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_05} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_06} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_07} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_08} alt="" /></div>
+            </div>
+            <div className="image_wrapper">
+              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_06} alt="" /></div>
+            </div>
+          </Marquee>
+        </section>
         {/* Project */}
-        <div id="project" className="section">
-          <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto' style={{ paddingTop: '46px', }}>
+        <div id="project" className="section" style={{paddingBottom:"0"}}>
+          <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
             <div className="text-box-inline">
               <span className='subtitle'>MY WORKS</span>
               <h2> See My Works Which <br/><span className="heading_fontLobster">Will Amaze You!</span> </h2>
@@ -829,9 +867,9 @@ const Home = () => {
           </ul>
         </div>
         {/* Portfolio */}
-        <div id="portfolio" className="section">
+        <div id="portfolio" className="section" style={{paddingBottom:"0"}}>
           <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
-            <Row className=''>
+            <Row className='align-items-center'>
               <Col className="col-lg-6 col-12 mb-4 mb-lg-0 order-lg-0 order-1">
                 <div className="experience_ul">
                   <OwlCarousel className='owl-theme' {...optionsprojects}>
@@ -855,54 +893,15 @@ const Home = () => {
               <Col className="col-lg-6 col-12 order-0">
                 <div className="text-box-inline">
                   <span className='subtitle'>Experience</span>
-                  <h2> 7+ Years of <span className="heading_fontLobster">Experience With Many<br /> Awards!</span> </h2>
+                  <h2> 7+ Years of <br/><span className="heading_fontLobster">Experience With Many Awards!</span> </h2>
                   <p className="mb-3 mb-lg-5">I have been developing sites for 7 years and i know for sure the main trends and directions of modern design, I have been a visionary and a reliable software engineering partner for world-class brands. You will get a decent result as you expect.</p>
                 </div>
               </Col>
             </Row>
           </Col>
         </div>
-        {/*  */}
-        {/* <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
-          <div className="text-box-inline text-center">
-            <span className='subtitle'>Logo Works</span>
-            <h2> 7+ Years of <span className="heading_fontLobster">Experience With Many<br /> Awards!</span> </h2>
-          </div>
-        </Col> */}
-        <section className="brand_bg position-relative h-100 d-grid align-items-center justify-content-center" style={{ paddingBottom: '60px', paddingTop: '60px' }}>
-          <div className="m-auto text-center position-absolute d-inline-flex align-items-center justify-content-center h-100 start-0 end-0" style={{ zIndex: '2', }}><img style={{ boxShadow: '0px 0px 30px #56b887' }} class="logoBan img-fluid" src={logoBanner} alt="logo-banner" /></div>
-          <Marquee pauseOnHover speed={100} delay={0}>
-            <div className="image_wrapper">
-              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_01} alt="" /></div>
-            </div>
-            <div className="image_wrapper">
-              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_02} alt="" /></div>
-            </div>
-            <div className="image_wrapper">
-              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_03} alt="" /></div>
-            </div>
-            <div className="image_wrapper">
-              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_04} alt="" /></div>
-            </div>
-            <div className="image_wrapper">
-              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_05} alt="" /></div>
-            </div>
-            <div className="image_wrapper">
-              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_06} alt="" /></div>
-            </div>
-            <div className="image_wrapper">
-              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_07} alt="" /></div>
-            </div>
-            <div className="image_wrapper">
-              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_08} alt="" /></div>
-            </div>
-            <div className="image_wrapper">
-              <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_06} alt="" /></div>
-            </div>
-          </Marquee>
-        </section>
         {/* Testimonials */}
-        <div id="" className="section">
+        <div id="" className="section" style={{paddingBottom:"0"}}>
           <Col className='col-xxl-9 col-xl-9 col-lg-11 col-11 mx-auto'>
             <Row className='align-items-center'>
               <Col className="col-lg-6 col-12 order-1 order-lg-0 text-center"><img className="img-fluid" src={testimonials} alt="testimonials" /></Col>

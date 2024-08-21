@@ -8,6 +8,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import '../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 import '../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 import '../node_modules/react-tabs/style/react-tabs.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // files import JS
 // import '../node_modules/jquery/dist/jquery.js';
 import './js/main.js';

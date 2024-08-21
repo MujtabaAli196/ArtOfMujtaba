@@ -23,7 +23,7 @@ Version: 1.0.0
     --main_color: #56b887;
     --main_background_color_gradiant: linear-gradient(278.99deg, #65b15b 57.37%, #fe761e 113.65%);
     --main_color-gradiant: -webkit-linear-gradient(#fdf0f0, #65b15b);
-    --body_font: 'Maison Neue Book';
+    --body_font: 'Poppins';
     --heading_fontLobster: "Lobster", sans-serif;
     --logo_font: 'Saira Stencil One', sans-serif;
     --Overpass_font: 'Overpass', sans-serif;
@@ -219,6 +219,7 @@ p {
     word-break: break-word;
     line-height: 30px;
     font-size: 16px;
+    font-weight: 200;
 }
 
 a {
@@ -332,9 +333,11 @@ select:focus {
     border: none;
     outline: none;
     box-shadow: 0 1em 3em -1.25em rgba(0, 0, 0, 0.3);
-    padding: 0.85em 3em;
+    padding: 0.45em 2em;
     text-transform: uppercase;
-    font-weight: 700;
+    border-radius: 0px 100px 100px 90px;
+    font-weight: 200;
+    font-size: 18px;
     letter-spacing: 1px;
     position: relative;
     margin: 1em 0em 0;
@@ -900,7 +903,7 @@ footer.footer {
         position: relative;
         background-color: var(--body_color);
         padding: 30px;
-        border-radius: 0.63rem;
+        border-radius: 0 0 0 70px;
 
         &:hover,
         &:focus {
@@ -951,6 +954,10 @@ footer.footer {
             margin-right: 30px;
             color: var(--white_color);
             text-transform: uppercase;
+            span{
+                text-transform: uppercase;
+                font-weight: 200;
+            }
 
             h3 {
                 color: var(--main_color);
@@ -995,9 +1002,13 @@ footer.footer {
         // padding-top: 120px;
         h1 {
             color: var(--white_color);
-            font-weight: 400;
+            font-weight: 100;
             font-size: 5rem;
             line-height: normal;
+            text-transform: uppercase;
+            span{
+                text-transform: none;
+            }
         }
 
         h3 {
@@ -1699,8 +1710,12 @@ footer.footer {
 
     h2 {
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 100;
         color: var(--white_color);
+        text-transform: uppercase;
+        span{
+            text-transform: none;
+        }
     }
 
     .btn-outline-light {
@@ -2232,6 +2247,25 @@ footer.footer {
     }
 }
 
+/*----------------project__slidee-----------------*/
+.project__slidee{
+    &::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 20%;
+        left: auto;
+        right: 0;
+        border-radius: 70px 0 0 70px;
+        background-color: var(--main_color);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+}
 /*----------------empty-state-----------------*/
 .empty-state {
     margin: 40px auto;

@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Row, Nav, InputGroup, NavItem, Form, Button } from "react-bootstrap";
 import { TypeAnimation } from 'react-type-animation';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import Slider from "react-slick";
 import { Link } from 'react-scroll';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Marquee from "react-fast-marquee";
@@ -78,26 +79,28 @@ import testimonials from "../images/testimonials.png";
 // 
 // import portfolio_foodzilla_img from "../images/portfolio_foodzilla_img.png";
 // import portfolio_walupp_img from "../images/portfolio_walupp_img.png";
-import portfolio_fs_img from "../images/portfolio_fs_img.png";
-import portfolio_yzee_img from "../images/portfolio_yzee_img.png";
-import portfolio_aribstrumed_img from "../images/portfolio_aribstrumed_img.png";
-import portfolio_listandsell_img from "../images/portfolio_listandsell_img.png";
-import portfolio_alphaauto_img from "../images/portfolio_alphaauto_img.png";
-import portfolio_numero_img from "../images/portfolio_numero_img.png";
-import portfolio_alloywheels_img from "../images/portfolio_alloywheels_img.png";
-import portfolio_meditro_img from "../images/portfolio_meditro_img.png";
-import portfolio_SMMProject_img from "../images/portfolio_SMMProject_img.png";
+// import portfolio_fs_img from "../images/portfolio_fs_img.png";
+// import portfolio_yzee_img from "../images/portfolio_yzee_img.png";
+// import portfolio_aribstrumed_img from "../images/portfolio_aribstrumed_img.png";
+// import portfolio_listandsell_img from "../images/portfolio_listandsell_img.png";
+// import portfolio_alphaauto_img from "../images/portfolio_alphaauto_img.png";
+// import portfolio_numero_img from "../images/portfolio_numero_img.png";
+// import portfolio_alloywheels_img from "../images/portfolio_alloywheels_img.png";
+// import portfolio_meditro_img from "../images/portfolio_meditro_img.png";
+// import portfolio_SMMProject_img from "../images/portfolio_SMMProject_img.png";
 // import portfolio_bitvortex_img from "../images/portfolio_bitvortex_img.png";
-// import portfolio_empty_img from "../images/portfolio_empty_img.png";
+import project__slidee_01 from "../images/project__slidee_01.png";
+import project__slidee_02 from "../images/project__slidee_02.png";
+import project__slidee_03 from "../images/project__slidee_03.png";
 
-import mobileScreen_01 from "../images/mobileScreen_01.png";
-import mobileScreen_02 from "../images/mobileScreen_02.png";
-import mobileScreen_03 from "../images/mobileScreen_03.png";
-import mobileScreen_04 from "../images/mobileScreen_04.png";
-import mobileScreen_05 from "../images/mobileScreen_05.png";
-import mobileScreen_06 from "../images/mobileScreen_06.png";
-import mobileScreen_07 from "../images/mobileScreen_07.png";
-import mobileScreen_08 from "../images/mobileScreen_08.png";
+// import mobileScreen_01 from "../images/mobileScreen_01.png";
+// import mobileScreen_02 from "../images/mobileScreen_02.png";
+// import mobileScreen_03 from "../images/mobileScreen_03.png";
+// import mobileScreen_04 from "../images/mobileScreen_04.png";
+// import mobileScreen_05 from "../images/mobileScreen_05.png";
+// import mobileScreen_06 from "../images/mobileScreen_06.png";
+// import mobileScreen_07 from "../images/mobileScreen_07.png";
+// import mobileScreen_08 from "../images/mobileScreen_08.png";
 
 import logoBanner from "../images/logo-banner.png";
 import logo_01 from "../images/logo_01.png";
@@ -487,33 +490,44 @@ const optionsprojects = {
   },
 };
 // workviewprojects
-const workviewprojects = {
-  margin: 5,
-  responsiveClass: true,
-  nav: false,
-  dots: true,
-  autoplay: true,
-  navText: ["Prev", "Next"],
-  smartSpeed: 300,
-  // center: true,
+// const workviewprojects = {
+//   margin: 5,
+//   responsiveClass: true,
+//   nav: false,
+//   dots: true,
+//   autoplay: true,
+//   navText: ["Prev", "Next"],
+//   smartSpeed: 300,
+//   center: true,
+//   loop: true,
+//   responsive: {
+//     0: {
+//       items: 1,
+//     },
+//     400: {
+//       items: 1,
+//     },
+//     600: {
+//       items: 2,
+//     },
+//     700: {
+//       items: 3,
+//     },
+//     1000: {
+//       items: 3,
+//     },
+//   },
+// };
+// 
+var Slick_Slider = {
+  dots: false,
   loop: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    400: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    700: {
-      items: 3,
-    },
-    1000: {
-      items: 3,
-    },
-  },
+  autoplay: true,
+  infinite: true,
+  responsiveClass: true,
+  smartSpeed: 1000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
 };
 // Home
 const Home = () => {
@@ -638,8 +652,7 @@ const Home = () => {
                   <p className=''>My name is Mujtaba Ali, I am a full stack web developer and graphic designer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts.</p>
                   <div className='btns mt-4'>
                     {/* spy={true} smooth={true} */}
-                    <a href='https://www.fiverr.com/artofmujtaba?up_rollout=true' rel="_blank" className='btn btn-web me-4'>Hire Me</a>
-                    {/* <a href={'https://www.artofmujtaba.com/portfolio_projects/cv/Mujtaba_Front-End_Developer_resume.pdf'} rel="_blank" className='btn btn-outline-light d-inline-flex align-items-center justify-content-center' style={{fontWeight:'600',fontSize:'14px', minWidth:'120px', maxWidth:'120px'}}>View CV</a> */}
+                    <Link rel="_blank" href="https://www.fiverr.com/artofmujtaba?up_rollout=true" class="hire">Hire Me<div class="shine"></div></Link>
                   </div>
                 </div>
               </Col>
@@ -705,22 +718,115 @@ const Home = () => {
                     </div>
                   </TabPanel>
                   {/* <TabPanel>
-                          <div className='skills-items'>
-                            {WordpressSkillsLoopArray.map((val) => {
-                              return(
-                                <WordpressSkillsLoop
-                                  key={val.key}
-                                  iconimg={val.iconimg}
-                                  tooltiptext={val.tooltiptext}
-                                />
-                              )
-                            })}
-                          </div>
-                        </TabPanel> */}
+                        <div className='skills-items'>
+                          {WordpressSkillsLoopArray.map((val) => {
+                            return(
+                              <WordpressSkillsLoop
+                                key={val.key}
+                                iconimg={val.iconimg}
+                                tooltiptext={val.tooltiptext}
+                              />
+                            )
+                          })}
+                        </div>
+                      </TabPanel>
+                    */}
                 </Col>
               </Row>
             </Tabs>
           </Col>
+        </div>
+        {/* Project */}
+        <div id="project" className="section">
+          <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto' style={{ paddingTop: '46px', }}>
+            <div className="text-box-inline">
+              <span className='subtitle'>MY WORKS</span>
+              <h2> See My Works Which <br/><span className="heading_fontLobster">Will Amaze You!</span> </h2>
+              <p className="mb-0 d-lg-block d-none">We develop the best quality website that serves for the long-term.<br />Well-documented, clean, easy and elegant interface helps any non-technical clients.</p>
+            </div>
+          </Col>
+          {/*  */}
+          <div className="position-relative project__slidee">
+            <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
+              <Slider {...Slick_Slider}>
+                <div className="d-flex align-items-center"><img className='img-fluid' src={project__slidee_01} alt="icon" /></div>
+                <div className="d-flex align-items-center"><img className='img-fluid' src={project__slidee_02} alt="icon" /></div>
+                <div className="d-flex align-items-center"><img className='img-fluid' src={project__slidee_03} alt="icon" /></div>
+              </Slider>
+            </Col>
+          </div>
+          {/*  */}
+          <ul className="portfolio-items list-unstyled">
+            {/* <ul className="d-none d-lg-block">
+                <li className="portfolio-item fslegals_border">
+                  <a href="https://fslegals.com/" rel="" className="d-block" >
+                    <div className="portfolio_img overlay overlay_fslegals"><img className='w-100 img-fluid' src={portfolio_fs_img} alt="icon" /></div>
+                    <div className="content"><h2>FSLegals <br /> <small>Wordpress Project</small></h2></div>
+                  </a>
+                </li>
+                <li className="portfolio-item alphaauto_border">
+                  <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
+                    <div className="portfolio_img overlay overlay_alphaauto"><img className='w-100 img-fluid' src={portfolio_alphaauto_img} alt="icon" /></div>
+                    <div className="content"><h2>Alphaauto eBay Store <br /> <small>eBay Stores</small></h2></div>
+                  </NavLink>
+                </li>
+                <li className="portfolio-item listandsell_border">
+                  <a href="https://listandsell.co.za/" rel="" className="d-block" >
+                    <div className="portfolio_img overlay overlay_listandsell"><img className='w-100 img-fluid' src={portfolio_listandsell_img} alt="icon" /></div>
+                    <div className="content"><h2>List and Sell <br /> <small>Best Cars Deals</small></h2></div>
+                  </a>
+                </li>
+                <li className="portfolio-item arinstrumed_border">
+                  <a href="https://ar-instrumed.com.au/" rel="" className="d-block" >
+                    <div className="portfolio_img overlay overlay_arinstrumed"><img className='w-100 img-fluid' src={portfolio_aribstrumed_img} alt="icon" /></div>
+                    <div className="content"><h2>AR Instrumed Web <br /> <small>Best Surgical Instruments</small></h2></div>
+                  </a>
+                </li>
+                <li className="portfolio-item alloywheels_border">
+                  <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
+                    <div className="portfolio_img overlay overlay_alloywheels"><img className='w-100 img-fluid' src={portfolio_alloywheels_img} alt="icon" /></div>
+                    <div className="content"><h2>CSA Alloy Wheels eBay Store <br /> <small>eBay Stores</small></h2></div>
+                  </NavLink>
+                </li>
+                <li className="portfolio-item numero_border">
+                  <a href="https://www.artofmujtaba.com/portfolio_projects/numero/" rel="" className="d-block" >
+                    <div className="portfolio_img overlay overlay_numero"><img className='w-100 img-fluid' src={portfolio_numero_img} alt="icon" /></div>
+                    <div className="content"><h2>Numero XI Web <br /> <small>Cocktails</small></h2></div>
+                  </a>
+                </li>
+                <li className="portfolio-item fslegals_border">
+                  <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
+                    <div className="portfolio_img overlay overlay_fslegals"><img className='w-100 img-fluid' src={portfolio_yzee_img} alt="icon" /></div>
+                    <div className="content"><h2>Y-Zee <br /> <small>E-Commrence Project</small></h2></div>
+                  </NavLink>
+                </li>
+                <li className="portfolio-item meditro_border">
+                  <a href="https://www.artofmujtaba.com/portfolio_projects/meditro/" rel="nofollow" className="d-block" >
+                    <div className="portfolio_img overlay overlay_meditro"><img className='w-100 img-fluid' src={portfolio_meditro_img} alt="icon" /></div>
+                    <div className="content"><h2>Doc-Tro Web <br /> <small>Medical</small></h2></div>
+                  </a>
+                </li>
+                <li className="portfolio-item smmProject_border">
+                  <a href="https://www.artofmujtaba.com/portfolio_projects/smm-project/" rel="nofollow" className="d-block" >
+                    <div className="portfolio_img overlay overlay_smmProject"><img className='w-100 img-fluid' src={portfolio_SMMProject_img} alt="icon" /></div>
+                    <div className="content"><h2>SMM Project <br /> <small>Post Management</small></h2></div>
+                  </a>
+                </li>
+              </ul> */}
+            {/* display max width */}
+            {/* <div className="workview_ul d-lg-none">
+              <OwlCarousel className='owl-theme workview_ul-owl' {...workviewprojects}>
+                <a href="https://foodzilla.co/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_01} alt='icon' /></a>
+                <a href="https://bitvortex.ltd/development/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_02} alt='icon' /></a>
+                <a href="https://listandsell.co.za/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_08} alt='icon' /></a>
+                <a href="http://walupp.com/orders" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_03} alt='icon' /></a>
+                <a href="https://www.ar-instrumed.com/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_04} alt='icon' /></a>
+                <a href="/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_05} alt='icon' /></a>
+                <a href="https://www.artofmujtaba.com/portfolio_projects/meditro/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_06} alt='icon' /></a>
+                <a href="https://www.artofmujtaba.com/portfolio_projects/smm-project/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_07} alt='icon' /></a>
+              </OwlCarousel>
+            </div> */}
+          </ul>
         </div>
         {/* Portfolio */}
         <div id="portfolio" className="section">
@@ -795,131 +901,6 @@ const Home = () => {
             </div>
           </Marquee>
         </section>
-        {/*  */}
-        {/* Project */}
-        <div id="project" className="section">
-          <Col className='col-xxl-9 col-xl-10 col-lg-11 col-11 mx-auto'>
-            <ul className="portfolio-items list-unstyled">
-              <li className='nav-itemm'>
-                <div className="text-box-inline">
-                  <span className='subtitle'>MY WORKS</span>
-                  <h2> See My Works Which <br /><span className="heading_fontLobster">Will Amaze You!</span> </h2>
-                  <p className="mb-3 mb-lg-5">We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.</p>
-                </div>
-              </li>
-              <ul className="d-none d-lg-block">
-                <li className="portfolio-item fslegals_border">
-                  <a href="https://fslegals.com/" rel="" className="d-block" >
-                    <div className="portfolio_img overlay overlay_fslegals"><img className='w-100 img-fluid' src={portfolio_fs_img} alt="icon" /></div>
-                    <div className="content"><h2>FSLegals <br /> <small>Wordpress Project</small></h2></div>
-                  </a>
-                </li>
-                {/* <li className="portfolio-item foodzilla_border">
-                        <a href="https://foodzilla.co/" rel="" className="d-block" >
-                            <div className="portfolio_img overlay overlay_foodzilla"><img className='w-100 img-fluid' src={portfolio_foodzilla_img} alt="icon"/></div>
-                            <div className="content"><h2>Foodzilla Web <br/> <small>E-Commrence Project</small></h2></div>
-                        </a>
-                      </li>
-                      <li className="portfolio-item walupp_border">
-                        <a href="http://walupp.com/orders" rel="" className="d-block" >
-                            <div className="portfolio_img overlay overlay_walupp"><img className='w-100 img-fluid' src={portfolio_walupp_img} alt="icon"/></div>
-                            <div className="content"><h2>Walupp Web <br/> <small>Best Food Deals</small></h2></div>
-                        </a>
-                      </li> */}
-                <li className="portfolio-item alphaauto_border">
-                  <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
-                    <div className="portfolio_img overlay overlay_alphaauto"><img className='w-100 img-fluid' src={portfolio_alphaauto_img} alt="icon" /></div>
-                    <div className="content"><h2>Alphaauto eBay Store <br /> <small>eBay Stores</small></h2></div>
-                  </NavLink>
-                </li>
-                <li className="portfolio-item listandsell_border">
-                  <a href="https://listandsell.co.za/" rel="" className="d-block" >
-                    <div className="portfolio_img overlay overlay_listandsell"><img className='w-100 img-fluid' src={portfolio_listandsell_img} alt="icon" /></div>
-                    <div className="content"><h2>List and Sell <br /> <small>Best Cars Deals</small></h2></div>
-                  </a>
-                </li>
-                <li className="portfolio-item arinstrumed_border">
-                  <a href="https://ar-instrumed.com.au/" rel="" className="d-block" >
-                    <div className="portfolio_img overlay overlay_arinstrumed"><img className='w-100 img-fluid' src={portfolio_aribstrumed_img} alt="icon" /></div>
-                    <div className="content"><h2>AR Instrumed Web <br /> <small>Best Surgical Instruments</small></h2></div>
-                  </a>
-                </li>
-                <li className="portfolio-item alloywheels_border">
-                  <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
-                    <div className="portfolio_img overlay overlay_alloywheels"><img className='w-100 img-fluid' src={portfolio_alloywheels_img} alt="icon" /></div>
-                    <div className="content"><h2>CSA Alloy Wheels eBay Store <br /> <small>eBay Stores</small></h2></div>
-                  </NavLink>
-                </li>
-                <li className="portfolio-item numero_border">
-                  <a href="https://www.artofmujtaba.com/portfolio_projects/numero/" rel="" className="d-block" >
-                    <div className="portfolio_img overlay overlay_numero"><img className='w-100 img-fluid' src={portfolio_numero_img} alt="icon" /></div>
-                    <div className="content"><h2>Numero XI Web <br /> <small>Cocktails</small></h2></div>
-                  </a>
-                </li>
-                <li className="portfolio-item fslegals_border">
-                  <NavLink to={`${process.env.PUBLIC_URL}/empty`} rel="" className="d-block" >
-                    <div className="portfolio_img overlay overlay_fslegals"><img className='w-100 img-fluid' src={portfolio_yzee_img} alt="icon" /></div>
-                    <div className="content"><h2>Y-Zee <br /> <small>E-Commrence Project</small></h2></div>
-                  </NavLink>
-                </li>
-                <li className="portfolio-item meditro_border">
-                  <a href="https://www.artofmujtaba.com/portfolio_projects/meditro/" rel="nofollow" className="d-block" >
-                    <div className="portfolio_img overlay overlay_meditro"><img className='w-100 img-fluid' src={portfolio_meditro_img} alt="icon" /></div>
-                    <div className="content"><h2>Doc-Tro Web <br /> <small>Medical</small></h2></div>
-                  </a>
-                </li>
-                <li className="portfolio-item smmProject_border">
-                  <a href="https://www.artofmujtaba.com/portfolio_projects/smm-project/" rel="nofollow" className="d-block" >
-                    <div className="portfolio_img overlay overlay_smmProject"><img className='w-100 img-fluid' src={portfolio_SMMProject_img} alt="icon" /></div>
-                    <div className="content"><h2>SMM Project <br /> <small>Post Management</small></h2></div>
-                  </a>
-                </li>
-                {/* <li className="portfolio-item bitvortex_border">
-                        <a href="https://bitvortex.ltd/" rel="nofollow" className="d-block" >
-                            <div className="portfolio_img overlay overlay_bitvortex"><img className='w-100 img-fluid' src={portfolio_bitvortex_img} alt="icon"/></div>
-                            <div className="content">
-                              <h2>BitVortex <br/> <small>Power of Cloud Mining</small></h2>
-                            </div>
-                        </a>
-                      </li> */}
-                {/* <li className="portfolio-item empty empty_border">
-                        <NavLink to={`${process.env.PUBLIC_URL}/all-portfolio`} rel="" className="d-block">
-                            <div className="portfolio_img overlay"><img className='w-100 img-fluid' src={portfolio_empty_img} alt="icon"/></div>
-                            <div className="content"><h2>View More</h2></div>
-                        </NavLink>
-                      </li> */}
-              </ul>
-              {/* display max width */}
-              <div className="workview_ul d-lg-none">
-                <OwlCarousel className='owl-theme workview_ul-owl' {...workviewprojects}>
-                  <a href="https://foodzilla.co/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_01} alt='icon' /></a>
-                  <a href="https://bitvortex.ltd/development/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_02} alt='icon' /></a>
-                  <a href="https://listandsell.co.za/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_08} alt='icon' /></a>
-                  <a href="http://walupp.com/orders" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_03} alt='icon' /></a>
-                  <a href="https://www.ar-instrumed.com/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_04} alt='icon' /></a>
-                  <a href="/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_05} alt='icon' /></a>
-                  <a href="https://www.artofmujtaba.com/portfolio_projects/meditro/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_06} alt='icon' /></a>
-                  <a href="https://www.artofmujtaba.com/portfolio_projects/smm-project/" rel='_blank' className=''><img className='img-fluid' src={mobileScreen_07} alt='icon' /></a>
-                  {/* {WorkViewULArray.map((val) =>{
-                            return(
-                              <WorkViewUL
-                                key={val.key}
-                                viewbtn={val.viewbtn}
-                                viewlink={val.viewlink}
-                                ledbanner={val.ledbanner}
-                                titleproject={val.titleproject}
-                                paragraph_text={val.paragraph_text}
-                              />
-                            )
-                          })} */}
-                </OwlCarousel>
-              </div>
-              {/* <li className="portfolio-item">
-                      <Link to={`${process.env.PUBLIC_URL}/all-portfolio`} className="d-flex align-items-center h-100 justify-content-center empty" rel={'_blank'}>Veiw More</Link>
-                    </li> */}
-            </ul>
-          </Col>
-        </div>
         {/* Testimonials */}
         <div id="" className="section">
           <Col className='col-xxl-9 col-xl-9 col-lg-11 col-11 mx-auto'>

@@ -743,7 +743,7 @@ const Home = () => {
           </div>
         </Col> */}
         <section className="brand_bg position-relative h-100 d-grid align-items-center justify-content-center" style={{ marginBottom: '60px', }}>
-          <div className="m-auto text-center position-absolute d-inline-flex align-items-center justify-content-center h-100 start-0 end-0" style={{ zIndex: '2', }}><img style={{ boxShadow: '0px 0px 30px #56b887' }} class="logoBan img-fluid" src={logoBanner} alt="logo-banner" /></div>
+          <div className="m-auto text-center position-absolute d-inline-flex align-items-center justify-content-center h-100 start-0 end-0" style={{ zIndex: '2', }}><img style={{ boxShadow: '0px 0px 30px #1f1f1f' }} class="logoBan img-fluid" src={logoBanner} alt="logo-banner" /></div>
           <Marquee pauseOnHover speed={100} delay={0}>
             <div className="image_wrapper">
               <div className="b-rand_logo"><img class="img-fluid" style={{ width: '200px' }} src={logo_01} alt="" /></div>

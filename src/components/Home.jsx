@@ -565,7 +565,7 @@ const Home = () => {
                         1000,
                         'React.js',
                         500,
-                        'Social Meda Post Designs',
+                        'Social Media Post Design',
                         1000,
                         'Logo Designs',
                         500,
